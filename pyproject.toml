@@ -9,7 +9,7 @@ description = "A Python and R NBA analytics portfolio centered on the 2026-27 Sa
 readme = "README.md"
 requires-python = ">=3.12"
 license = {text = "MIT"}
-authors = [{name = "Portfolio Author"}]
+authors = [{name = "Joseph Smarrelli"}]
 dependencies = [
   "altair>=5.5",
   "duckdb>=1.1",
@@ -50,7 +50,7 @@ testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py311"
+target-version = "py312"
 extend-exclude = [".cache", "spurslabR.Rcheck"]
 
 [tool.ruff.lint]

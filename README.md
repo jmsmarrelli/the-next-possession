@@ -10,11 +10,11 @@ This portfolio treats San Antonio's 2025–26 Finals run as the start of the que
 |---:|---|---|---|---|
 | 01 | Schedule Gauntlet | Where will travel and density apply the most pressure? | Haversine distance, rolling windows, transparent index | Per-game stress table |
 | 02 | Contender Landscape | Which teams define the two-way title bar? | Adjusted ratings, contender quadrants | Offense-defense map |
-| 03 | Rotation Chemistry | Which pair/unit signals deserve deeper study? | Reliability-weighted boxscore proxies | Pair and starter tables |
+| 03 | Rotation Co-appearance | Which pair/unit signals deserve deeper study? | Heuristic co-appearance scores | Pair and starter tables |
 | 04 | Wemby Impact | How different were results when Wembanyama played? | Availability split, game margins | Game-level impact table |
 | 05 | Finals Clutch Autopsy | When did Finals control change? | Play-by-play state, win probability, clutch flags | Enriched possession log |
 | 06 | Player Archetypes | Where do Spurs roles overlap or complement? | Standardization, k-means | Leaguewide role map |
-| 07 | Title Odds | What is a transparent preseason baseline? | Normal-margin model, Monte Carlo | Win/title distributions |
+| 07 | Tournament Scenario | What do explicit simulation assumptions imply? | Normal-margin model, Monte Carlo | Schedule wins / illustrative tournament |
 
 ## Why 2026–27
 
@@ -122,8 +122,12 @@ docs/                   Rendered Quarto site
 
 ## Interpretation guardrails
 
-The portfolio does not hide uncertainty behind polished charts. Rotation chemistry is a screening proxy, not true lineup impact. The Wembanyama split is descriptive, not causal. The title model is a preseason baseline without injuries or transaction priors. Each project names the next validation step that would be required before operational basketball use.
+The portfolio does not hide uncertainty behind polished charts. Rotation chemistry is a screening proxy, not true lineup impact. The Wembanyama split is descriptive, not causal. The neutral tournament is a demonstration without NBA brackets, injuries or transaction priors. Each project names the next validation step that would be required before operational basketball use.
 
 ## Attribution
 
 Educational project; not affiliated with or endorsed by the NBA, ESPN, Basketball Reference, or the San Antonio Spurs. Team names and marks belong to their owners. Data access is subject to provider terms. Code is released under the MIT License.
+
+## October 2026 review
+
+The tournament is a neutral-site demonstration with random matchups and byes. It does not represent NBA playoff qualification or conference brackets, so its output must not be described as NBA championship odds. Schedule penalties are assumptions requiring historical calibration. See [VALIDATION_CURRENT.md](VALIDATION_CURRENT.md) for actual execution coverage and [PROVENANCE.md](PROVENANCE.md) for AI assistance.

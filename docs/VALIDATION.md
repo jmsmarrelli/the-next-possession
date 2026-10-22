@@ -1,5 +1,7 @@
 # Validation report
 
+Historical record. See [VALIDATION_CURRENT.md](VALIDATION_CURRENT.md) for the October 22 review and current execution limits. Counts below describe the earlier snapshot, not the modified branch.
+
 Verified on 2026-08-25 in a clean local R library.
 
 ## Environments
@@ -29,6 +31,4 @@ snapshots; installing Arrow activates Parquet reads without changing the analysi
 
 ## Modeling boundary
 
-The Python and R title paths intentionally differ: Python simulates best-of-seven
-series, while R supplies a dependency-light Bradley-Terry sensitivity baseline.
-That difference is documented and is not treated as a parity failure.
+In the earlier snapshot, Python simulated series while R used a normalized rating baseline. The October review replaces both with the same neutral-tournament structure. Random draws differ between languages; deterministic game probabilities are checked separately. Neither is an NBA championship forecast.

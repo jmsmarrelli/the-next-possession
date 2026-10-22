@@ -17,11 +17,11 @@ description: "What each model does, what it does not do, and how to extend it."
 |---|---|---|---|
 | Schedule Gauntlet | Great-circle travel + rolling schedule-density index | Per-game stress score | Does not observe charter timing or recovery data |
 | Contender Landscape | Adjusted offensive/defensive ratings | Two-way contender map | Prior-year snapshot, not current-season form |
-| Rotation Chemistry | Pair co-appearance aggregation + starter-unit summaries | Reliability-weighted chemistry proxy | Not possession-level shared minutes |
+| Rotation Co-appearance | Pair co-appearance aggregation + starter-unit summaries | Heuristic co-appearance score | Not possession-level shared minutes |
 | Wemby Impact | Played/out descriptive game split | Win rate and margin split | Confounding from opponent and teammate availability |
 | Finals Clutch Autopsy | Play-by-play score state + win probability | Lead trajectories and clutch states | Play descriptions do not encode tactical intent |
 | Player Archetypes | Standardized features + k-means | Eight leaguewide role clusters | Labels are descriptive, not player value rankings |
-| Title Odds | Normal-margin game model + Monte Carlo | Win distribution and title baseline | Excludes injuries and explicit roster-change priors |
+| Tournament Scenario | Normal-margin game model + Monte Carlo | Win distribution and title baseline | Excludes injuries and explicit roster-change priors |
 
 ## Simulation specification
 

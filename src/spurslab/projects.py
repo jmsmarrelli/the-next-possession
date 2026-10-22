@@ -136,7 +136,7 @@ def run_wemby(paths: Paths) -> dict[str, Any]:
 
 The Spurs went **{_fmt_pct(played['win_pct'])}** in games Wembanyama played with a **{played['avg_margin']:+.1f} average margin**, versus **{_fmt_pct(out['win_pct'])}** and **{out['avg_margin']:+.1f}** when he was out. The descriptive margin gap is **{played['avg_margin'] - out['avg_margin']:+.1f} points per game**.
 
-Availability is entangled with schedule strength, teammate availability, and game state, so this is a decision-oriented descriptive split—not a causal on/off estimate. The companion data keeps opponent and season-type fields available for a controlled extension.
+The 106-game sample combines regular season and postseason games. Availability is entangled with schedule strength, teammate availability, and game state, so this is a decision-oriented descriptive split—not a causal on/off estimate. The companion data keeps opponent and season-type fields available for a controlled extension.
 
 ![Wembanyama availability split](../../assets/04_wemby_impact.png)
 """
@@ -163,7 +163,7 @@ def run_finals(paths: Paths) -> dict[str, Any]:
 
 San Antonio held a lead of at least **{summary['max_spurs_lead'].max():.0f} points** in the series, yet its average peak-to-final swing was **{summary['lead_surrendered'].mean():.1f} points**. Across the five games there were **{int(summary['clutch_plays'].sum())} clutch-state plays**—fourth quarter, five minutes or less, score within five—despite the 4–1 series result.
 
-This is the most actionable offseason story in the portfolio: the gap was not simply “talent.” The play-by-play view isolates when control changed and creates a clean base for possession tagging, timeout sequencing, shot-quality review, and late-clock decision analysis.
+The event log locates scoring swings for film review. It does not explain why the series was lost or separate talent, tactics and shooting variation. Review possessions around the largest changes before drawing a coaching conclusion.
 
 ![Finals lead progression](../../assets/05_finals_leads.png)
 """
@@ -219,6 +219,7 @@ def run_title_odds(paths: Paths) -> dict[str, Any]:
         model["contender_count"],
         model["playoff_simulations"],
         settings["portfolio"]["random_seed"],
+        prior_weight=config.prior_rating_weight, margin_sd=config.margin_sd,
     )
     project = paths.root / "projects" / "07_title_odds"
     _save(games, project, "game_win_probabilities")
@@ -231,11 +232,11 @@ def run_title_odds(paths: Paths) -> dict[str, Any]:
     mean_wins = float(win_summary.loc[win_summary["metric"] == "mean_wins", "value"].iloc[0])
     report = f"""## What the model says
 
-The schedule model projects **{mean_wins:.1f} wins across the {len(games)} currently assigned games**. In the separate contender knockout baseline, San Antonio ranks **No. {int(spurs['title_odds_rank'])}** with a **{_fmt_pct(spurs['title_probability'])} title probability**.
+The schedule model projects **{mean_wins:.1f} wins across the {len(games)} currently assigned games**. In the separate contender knockout baseline, San Antonio ranks **No. {int(spurs['title_odds_rank'])}** with a **{_fmt_pct(spurs['title_probability'])} chance of winning this illustrative tournament**.
 
-The estimates are baselines, not forecasts carved in stone. Prior adjusted net rating is regressed toward average, game probabilities include home court/rest/travel, and the title model excludes injury and transaction assumptions. The CSV outputs make every scenario parameter replaceable as 2026–27 evidence arrives.
+The schedule calculation uses assumed coefficients that have not been calibrated on held-out seasons. Its simulation interval conditions on those fixed assumptions; it excludes parameter and roster uncertainty. The separate tournament has random matchups, neutral-site best-of-seven series and random byes. It omits conferences and play-in qualification, so its probabilities are **not NBA championship odds**. CSV column names retain the legacy title_probability label for compatibility.
 
-![Title odds](../../assets/07_title_odds.png)
+![Illustrative neutral-site tournament](../../assets/07_title_odds.png)
 
 ![Win distribution](../../assets/07_win_distribution.png)
 """
@@ -266,14 +267,14 @@ def run_all() -> dict[str, dict[str, Any]]:
     finals = results["finals"]
     executive = f"""## Portfolio thesis
 
-San Antonio enters 2026–27 as a defending Western Conference champion with a real two-way title profile. These seven projects turn that context into a coherent decision system: **where the schedule applies pressure, which contenders define the bar, which rotation combinations deserve deeper study, how much outcomes move with Wembanyama's availability, why the Finals slipped, where roster archetypes overlap, and what a transparent preseason simulation implies.**
+San Antonio enters 2026–27 as a defending Western Conference champion with a real two-way title profile. These seven projects turn that context into a set of descriptive comparisons and model demonstrations: **where the schedule applies pressure, which contenders define the bar, which rotation combinations deserve deeper study, how much outcomes move with Wembanyama's availability, where the Finals score changed, where roster archetypes overlap, and what a transparent preseason simulation implies.**
 
 ### Headline outputs
 
 - **Schedule:** {schedule['scheduled_games']} assigned games, {schedule['back_to_backs']} back-to-backs, about {schedule['travel_miles']:,} travel miles.
 - **Prior-year level:** No. {results['contenders']['spurs_rank']} adjusted margin, {results['contenders']['spurs_adjusted_net_rating']:+.2f} per 100.
 - **Finals pressure point:** {finals['average_lead_surrendered']:.1f}-point average peak-to-final swing.
-- **Simulation baseline:** {title['mean_wins']:.1f} wins in assigned games; No. {title['spurs_title_rank']} among modeled title contenders.
+- **Simulation baseline:** {title['mean_wins']:.1f} wins in assigned games; No. {title['spurs_title_rank']} in an illustrative neutral-site tournament.
 
 Each project has paired Python and R entry points, an analysis-ready CSV, methods and limitations, and a rendered visual. The build is deterministic at seed 210.
 """

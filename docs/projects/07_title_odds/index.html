@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc 3.10" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>07 · Title Odds</title>
+  <title>07 · Tournament Scenario</title>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -37,7 +37,7 @@
 <a href="../../methodology.html">Methods</a>
 <a href="../../data.html">Data</a>
 </nav>
-<h1 id="title-odds">07 · Title Odds</h1>
+<h1 id="tournament-scenario">07 · Tournament Scenario</h1>
 <h2 id="decision-question">Decision question</h2>
 <p>What do prior team strength and the assigned schedule imply before
 the season begins, and how should that baseline update when new evidence
@@ -45,16 +45,21 @@ arrives?</p>
 <h2 id="what-the-model-says">What the model says</h2>
 <p>The schedule model projects <strong>54.1 wins across the 80 currently
 assigned games</strong>. In the separate contender knockout baseline,
-San Antonio ranks <strong>No. 2</strong> with a <strong>16.7% title
-probability</strong>.</p>
-<p>The estimates are baselines, not forecasts carved in stone. Prior
-adjusted net rating is regressed toward average, game probabilities
-include home court/rest/travel, and the title model excludes injury and
-transaction assumptions. The CSV outputs make every scenario parameter
-replaceable as 2026–27 evidence arrives.</p>
+San Antonio ranks <strong>No. 2</strong> with a <strong>15.0% chance of
+winning this illustrative tournament</strong>.</p>
+<p>The schedule calculation uses assumed coefficients that have not been
+calibrated on held-out seasons. Its simulation interval conditions on
+those fixed assumptions; it excludes parameter and roster uncertainty.
+The separate tournament has random matchups, neutral-site best-of-seven
+series and random byes. It omits conferences and play-in qualification,
+so its probabilities are <strong>not NBA championship odds</strong>. CSV
+column names retain the legacy title_probability label for
+compatibility.</p>
 <figure>
-<img src="../../assets/07_title_odds.png" alt="Title odds" />
-<figcaption aria-hidden="true">Title odds</figcaption>
+<img src="../../assets/07_title_odds.png"
+alt="Illustrative neutral-site tournament" />
+<figcaption aria-hidden="true">Illustrative neutral-site
+tournament</figcaption>
 </figure>
 <figure>
 <img src="../../assets/07_win_distribution.png"

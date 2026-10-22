@@ -54,6 +54,10 @@ TEAM_ABBREVIATIONS = {
 
 
 def game_win_probability(expected_margin: np.ndarray | float, margin_sd: float = 12.0) -> np.ndarray:
+    if not np.isfinite(margin_sd) or margin_sd <= 0:
+        raise ValueError("margin_sd must be finite and positive")
+    if not np.isfinite(np.asarray(expected_margin, dtype=float)).all():
+        raise ValueError("Expected margins must be finite")
     return np.asarray(ndtr(np.asarray(expected_margin, dtype=float) / margin_sd), dtype=float)
 
 
@@ -76,8 +80,9 @@ def schedule_probabilities(
     spurs_rating = float(lookup.loc["SA"])
     frame = schedule_features.copy()
     frame["opponent_rating"] = frame["opponent"].map(lookup)
-    fallback = float(rating_frame["forecast_rating"].median())
-    frame["opponent_rating"] = frame["opponent_rating"].fillna(fallback)
+    if frame["opponent_rating"].isna().any():
+        missing = sorted(frame.loc[frame["opponent_rating"].isna(), "opponent"].unique())
+        raise ValueError(f"No prior rating for opponents: {missing}")
     home_adjustment = np.where(frame["is_neutral"], 0, np.where(frame["is_home"], config.home_court_points, -config.home_court_points))
     rest_adjustment = np.clip(frame["rest_days"] - 1, -1, 2) * 0.35
     travel_adjustment = -np.minimum(frame["travel_miles"] / 1000, 2.5) * 0.25
@@ -99,6 +104,10 @@ def simulate_schedule(
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     rng = np.random.default_rng(seed)
     p = probabilities["win_probability"].to_numpy()
+    if not isinstance(simulations, (int, np.integer)) or simulations <= 0:
+        raise ValueError("simulations must be a positive integer")
+    if not len(p) or not np.isfinite(p).all() or ((p < 0) | (p > 1)).any():
+        raise ValueError("Win probabilities must be nonempty, finite and in [0, 1]")
     wins = (rng.random((simulations, len(p))) < p).sum(axis=1)
     summary = pd.DataFrame(
         {
@@ -119,57 +128,60 @@ def simulate_schedule(
     return summary, distribution
 
 
-def _series_win_probability(team_rating: float, opponent_rating: float, home_games: int = 4) -> float:
-    home_p = float(game_win_probability(team_rating - opponent_rating + 2.2))
-    away_p = float(game_win_probability(team_rating - opponent_rating - 2.2))
-    game_probs = [home_p, home_p, away_p, away_p, home_p, away_p, home_p][: home_games + 3]
-    states = np.zeros((8, 8))
-    states[0, 0] = 1.0
-    for probability in game_probs:
-        next_states = states.copy() * 0
-        for wins in range(4):
-            for losses in range(4):
-                mass = states[wins, losses]
-                next_states[wins + 1, losses] += mass * probability
-                next_states[wins, losses + 1] += mass * (1 - probability)
-        next_states[4, :] += states[4, :]
-        next_states[:, 4] += states[:, 4]
-        states = next_states
-    return float(states[4, :4].sum())
+def _series_win_probability(team_rating: float, opponent_rating: float, margin_sd: float = 12.0) -> float:
+    """Best-of-seven win chance for independent, identically distributed neutral games.
+
+    Winning a series is equivalent to winning at least four of seven games.
+    This intentionally excludes home court and is not an NBA playoff forecast.
+    """
+    from math import comb
+    p = float(game_win_probability(team_rating - opponent_rating, margin_sd))
+    return float(sum(comb(7, k) * p**k * (1-p)**(7-k) for k in range(4, 8)))
 
 
 def contender_title_odds(
-    ratings: pd.DataFrame, contender_count: int = 12, simulations: int = 50_000, seed: int = 210
+    ratings: pd.DataFrame, contender_count: int = 12, simulations: int = 50_000, seed: int = 210,
+    prior_weight: float = 0.72, margin_sd: float = 12.0,
 ) -> pd.DataFrame:
     """Neutral-field knockout model across the strongest prior-year teams.
 
-    This is a deliberately compact preseason baseline. It is not presented as a
-    sportsbook model: injuries, roster changes, and bracket-specific paths are
-    intentionally left for scenario updates.
+    This illustrates a neutral tournament, not NBA championship odds. It has
+    random matchups and byes, no conference brackets, no qualification model,
+    and no injury or roster-change inputs.
     """
 
-    frame = prepare_ratings(ratings).nsmallest(contender_count, "rank").copy()
+    if not isinstance(contender_count, int) or not 2 <= contender_count <= len(ratings):
+        raise ValueError("contender_count must be between two and the number of teams")
+    if not isinstance(simulations, (int, np.integer)) or simulations <= 0:
+        raise ValueError("simulations must be a positive integer")
+    frame = prepare_ratings(ratings, prior_weight).nsmallest(contender_count, "rank").copy()
+    if frame.team.duplicated().any() or not np.isfinite(frame.forecast_rating).all():
+        raise ValueError("Teams must be unique and ratings finite")
     names = frame["team"].to_numpy()
     strengths = frame["forecast_rating"].to_numpy()
     rng = np.random.default_rng(seed)
     championships = dict.fromkeys(names, 0)
     finals = dict.fromkeys(names, 0)
+    pair_probability = np.array([
+        [_series_win_probability(a, b, margin_sd) for b in strengths] for a in strengths
+    ])
 
     for _ in range(simulations):
         active = list(rng.permutation(len(names)))
         while len(active) > 1:
+            # Count finalists before removing a bye from a three-team round.
+            if len(active) == 2:
+                finals[names[active[0]]] += 1
+                finals[names[active[1]]] += 1
             if len(active) % 2:
-                # The highest-rated remaining team receives a bye.
-                bye = max(active, key=lambda idx: strengths[idx])
+                # Random byes preserve symmetry among equally strong teams.
+                bye = active[int(rng.integers(len(active)))]
                 active.remove(bye)
                 next_round = [bye]
             else:
                 next_round = []
-            if len(active) == 2:
-                finals[names[active[0]]] += 1
-                finals[names[active[1]]] += 1
             for left, right in zip(active[::2], active[1::2], strict=False):
-                probability = _series_win_probability(strengths[left], strengths[right])
+                probability = pair_probability[left, right]
                 next_round.append(left if rng.random() < probability else right)
             active = next_round
         championships[names[active[0]]] += 1

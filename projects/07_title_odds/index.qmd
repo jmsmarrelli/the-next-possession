@@ -1,5 +1,5 @@
 ---
-title: "07 · Title Odds"
+title: "07 · Tournament Scenario"
 description: "A transparent preseason baseline built to be updated."
 ---
 

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 import re
 import shutil
 import subprocess
@@ -10,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
-PANDOC = Path("/Applications/quarto/bin/tools/pandoc")
+PANDOC = Path(os.environ.get("PANDOC") or shutil.which("pandoc") or "/Applications/quarto/bin/tools/pandoc")
 INCLUDE = re.compile(r"\{\{<\s+include\s+([^>]+?)\s*>\}\}")
 FRONT_MATTER = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 TITLE = re.compile(r'^title:\s*["\']?(.+?)["\']?\s*$', re.MULTILINE)
@@ -49,7 +50,8 @@ def copy_artifacts() -> None:
     DOCS.mkdir(parents=True, exist_ok=True)
     shutil.copytree(ROOT / "assets", DOCS / "assets", dirs_exist_ok=True)
     shutil.copy2(ROOT / "SOURCES.md", DOCS / "SOURCES.md")
-    shutil.copy2(ROOT / "VALIDATION.md", DOCS / "VALIDATION.md")
+    for name in ["VALIDATION.md", "VALIDATION_CURRENT.md", "PROVENANCE.md"]:
+        shutil.copy2(ROOT / name, DOCS / name)
     for project in sorted((ROOT / "projects").iterdir()):
         if not project.is_dir():
             continue

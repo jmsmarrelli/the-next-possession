@@ -128,8 +128,8 @@ def plot_pair_chemistry(pairs: pd.DataFrame, path: Path, players: int = 10) -> N
     for player in leaders:
         matrix.loc[player, player] = 0
     fig, ax = plt.subplots(figsize=(11, 9))
-    sns.heatmap(matrix, cmap="vlag", center=0, linewidths=0.5, annot=True, fmt=".1f", ax=ax, cbar_kws={"label": "Chemistry proxy"})
-    ax.set_title("Rotation chemistry map", loc="left", weight="bold", fontsize=22)
+    sns.heatmap(matrix, cmap="vlag", center=0, linewidths=0.5, annot=True, fmt=".1f", ax=ax, cbar_kws={"label": "Heuristic co-appearance score"})
+    ax.set_title("Rotation co-appearance map", loc="left", weight="bold", fontsize=22)
     ax.set_xlabel("")
     ax.set_ylabel("")
     _finish(fig, path)
@@ -141,7 +141,8 @@ def plot_wemby_impact(summary: pd.DataFrame, path: Path) -> None:
     for ax, metric, title in zip(axes, ["win_pct", "avg_margin"], ["Win rate", "Average margin"], strict=False):
         data = summary.copy()
         values = data[metric] * 100 if metric == "win_pct" else data[metric]
-        ax.bar(data["availability"], values, color=[ORANGE, TEAL][: len(data)])
+        labels = [f"{row.availability}\n(n={row.games} games)" for row in data.itertuples()]
+        ax.bar(labels, values, color=[ORANGE, TEAL][: len(data)])
         ax.set_title(title, loc="left", weight="bold")
         ax.set_ylabel("Percent" if metric == "win_pct" else "Points")
         ax.spines[["top", "right", "left"]].set_visible(False)
@@ -154,6 +155,7 @@ def plot_wemby_impact(summary: pd.DataFrame, path: Path) -> None:
         fontsize=22,
         weight="bold",
     )
+    fig.text(0.05, 0.86, "2025–26 regular season + playoffs · descriptive availability split, not causal impact", fontsize=10)
     _finish(fig, path)
 
 
@@ -226,10 +228,11 @@ def plot_title_odds(odds: pd.DataFrame, path: Path) -> None:
     colors = [ORANGE if team == "San Antonio Spurs" else TEAL for team in data["team"]]
     fig, ax = plt.subplots(figsize=(11, 8))
     ax.barh(data["team"], data["title_probability"] * 100, color=colors)
-    ax.set_title("Preseason baseline title odds", loc="left", weight="bold", fontsize=22)
+    ax.set_title("Illustrative neutral tournament", loc="left", weight="bold", fontsize=22)
     ax.set_xlabel("Simulation probability (%)")
     ax.set_ylabel("")
     ax.spines[["top", "right", "left"]].set_visible(False)
+    fig.text(0.02, -0.02, "Random matchups and byes; no NBA conference or qualification structure. Not NBA title odds.", fontsize=10)
     _finish(fig, path)
 
 

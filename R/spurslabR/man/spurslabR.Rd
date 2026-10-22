@@ -46,7 +46,7 @@ schedule_probabilities(schedule_features, ratings,
 simulate_schedule(probabilities, simulations = 25000, seed = 210)
 
 contender_title_odds(ratings, contender_count = 12,
-  simulations = 50000, seed = 210)
+  simulations = 50000, seed = 210, prior_weight = 0.72, margin_sd = 12)
 }
 \arguments{
   \item{lat1, lon1, lat2, lon2}{Numeric latitude and longitude vectors.}
@@ -67,6 +67,7 @@ contender_title_odds(ratings, contender_count = 12,
   \item{margin_sd}{Standard deviation of scoring margin.}
   \item{ratings}{Team ratings data frame.}
   \item{home_court_points}{Home-court adjustment in points.}
+  \item{prior_weight}{Rating shrinkage for the illustrative neutral tournament, not NBA title odds.}
   \item{prior_rating_weight}{Weight applied to the prior-season rating.}
   \item{probabilities}{Per-game win probability data.}
   \item{simulations}{Number of simulation draws.}
