@@ -19,3 +19,6 @@ HTML now uses the pinned CommonMark renderer `markdown-it-py==4.2.0` with tables
 ## Review and publication
 
 Changes are local to `audit/2026-10-22-portfolio`. No push, merge, repository visibility change or public release occurred. The local PR draft records the intended summary. Publication requires a reachable authenticated GitHub connection and the owner's approval. Read [PROVENANCE.md](PROVENANCE.md) before describing personal authorship or validation in an application.
+
+
+Current delivery policy: feature branches and pull requests are authorized; merging into default branches requires separate owner approval. Repository visibility must remain unchanged.
