@@ -1,0 +1,5 @@
+source(file.path("R", "bootstrap.R"))
+box <- read_snapshot("spurs_player_boxscores_2025_26", root)
+schedule <- read_snapshot("spurs_schedule_2025_26", root)
+readr::write_csv(rotation_pair_proxies(box), file.path(root, "projects", "03_rotation_chemistry", "pair_chemistry_proxies_r.csv"))
+readr::write_csv(starter_unit_proxies(box, schedule), file.path(root, "projects", "03_rotation_chemistry", "starter_unit_proxies_r.csv"))

@@ -1,0 +1,46 @@
+---
+title: "The Next Possession"
+page-layout: full
+toc: false
+---
+
+::: {.hero}
+<div class="eyebrow">2026–27 San Antonio Spurs · NBA analytics portfolio</div>
+
+# Seven questions between San Antonio and a title.
+
+Python and R projects built around a defending Western Conference champion, a generational two-way centerpiece, and an unfinished Finals story.
+:::
+
+{{< include reports/executive_summary.md >}}
+
+## Explore the portfolio
+
+::: {.project-grid}
+<a class="project-card" href="projects/01_schedule_gauntlet/index.html"><div class="project-number">PROJECT 01</div><h3>Schedule Gauntlet</h3><p>Travel, rest, density, international dates, and the hardest 2026–27 stretches.</p></a>
+<a class="project-card" href="projects/02_contender_landscape/index.html"><div class="project-number">PROJECT 02</div><h3>Contender Landscape</h3><p>Where the Spurs sit on the league's offense-defense map—and who defines the bar.</p></a>
+<a class="project-card" href="projects/03_rotation_chemistry/index.html"><div class="project-number">PROJECT 03</div><h3>Rotation Chemistry</h3><p>Auditable co-appearance and starting-unit proxies, with the analytical boundary intact.</p></a>
+<a class="project-card" href="projects/04_wemby_impact/index.html"><div class="project-number">PROJECT 04</div><h3>Wemby Impact</h3><p>The game-level availability split for the reigning Defensive Player of the Year.</p></a>
+<a class="project-card" href="projects/05_finals_clutch_autopsy/index.html"><div class="project-number">PROJECT 05</div><h3>Finals Clutch Autopsy</h3><p>Five close games, four surrendered double-digit leads, and the moments where control changed.</p></a>
+<a class="project-card" href="projects/06_player_archetypes/index.html"><div class="project-number">PROJECT 06</div><h3>Player Archetypes</h3><p>Leaguewide role clusters for roster fit, redundancy, and complementary-player searches.</p></a>
+<a class="project-card" href="projects/07_title_odds/index.html"><div class="project-number">PROJECT 07</div><h3>Title Odds</h3><p>Game probabilities, schedule wins, and a transparent preseason contender simulation.</p></a>
+:::
+
+## Why this season
+
+The 2025–26 Spurs went 62–20, beat Oklahoma City in seven games to win the West, then lost a closer-than-4–1 Finals to New York. Victor Wembanyama earned First-Team All-NBA and Defensive Player of the Year honors; Keldon Johnson won Sixth Man of the Year. The 2026–27 schedule opens at home against the Thunder and includes a Christmas Finals rematch at Madison Square Garden plus games in Paris and Manchester.
+
+That is the portfolio's through-line: **turn last year's breakthrough and last possession failures into this year's decision questions.**
+
+## Reproducibility at a glance
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e ".[dev,notebooks]"
+spurslab all
+quarto render
+```
+
+R implementations live in `R/spurslabR/` and beside every project as `analysis.R`. Network calls are cached; committed snapshots keep the showcase runnable offline.
+

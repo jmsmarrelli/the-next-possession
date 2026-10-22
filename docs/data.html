@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Data &amp; provenance</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<nav class="fallback-nav">
+<a class="brand" href="index.html">THE NEXT POSSESSION</a>
+<a href="index.html#explore-the-portfolio">Projects</a>
+<a href="methodology.html">Methods</a>
+<a href="data.html">Data</a>
+</nav>
+<h1 id="data-provenance">Data &amp; provenance</h1>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><strong>Official NBA / Spurs:</strong> season context, official
+schedule release, awards, and playoff results.</li>
+<li><strong>ESPN public JSON:</strong> Spurs schedules, roster, game
+boxscores, play-by-play, and win probability.</li>
+<li><strong>Basketball Reference:</strong> 2025–26 team ratings,
+schedules/results, and 2022–23 through 2025–26 player season
+tables.</li>
+</ul>
+<p>See <a href="SOURCES.md">SOURCES.md</a> for direct links and access
+notes.</p>
+<h2 id="snapshot-catalog">Snapshot catalog</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Snapshot</th>
+<th>Grain</th>
+<th>Used by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>spurs_schedule_2026_27</code></td>
+<td>One row per assigned game</td>
+<td>Schedule, title odds</td>
+</tr>
+<tr>
+<td><code>spurs_roster_2026_27</code></td>
+<td>One row per rostered player</td>
+<td>Roster context</td>
+</tr>
+<tr>
+<td><code>spurs_schedule_2025_26</code></td>
+<td>One row per regular/postseason game</td>
+<td>Rotation, Wemby, Finals</td>
+</tr>
+<tr>
+<td><code>spurs_player_boxscores_2025_26</code></td>
+<td>Player-game</td>
+<td>Rotation, Wemby</td>
+</tr>
+<tr>
+<td><code>spurs_postseason_plays_2026</code></td>
+<td>Play</td>
+<td>Finals</td>
+</tr>
+<tr>
+<td><code>nba_team_ratings_2025_26</code></td>
+<td>Team-season</td>
+<td>Contenders, title odds</td>
+</tr>
+<tr>
+<td><code>nba_player_seasons_2022_26</code></td>
+<td>Player-team-season</td>
+<td>Archetypes</td>
+</tr>
+<tr>
+<td><code>nba_games_2025_26</code></td>
+<td>Game</td>
+<td>Validation and extensions</td>
+</tr>
+</tbody>
+</table>
+<p>Every snapshot is stored as portable CSV and efficient Parquet.
+<code>manifest.json</code> records row counts, schemas, and build
+time.</p>
+<h2 id="data-contracts">Data contracts</h2>
+<p>Normalizers fail loudly when schedules or rosters are empty; feature
+functions assert required columns; tests cover invariants such as
+nonnegative travel, bounded probabilities, unique game IDs, and exactly
+five players in retained starter units.</p>
+<h2 id="responsible-use">Responsible use</h2>
+<p>This is an educational portfolio, not an official NBA product.
+Provider data remains subject to each provider’s terms. The repository
+caches raw responses locally but distributes analysis-ready extracts and
+source links. Refresh slowly and avoid parallel request bursts.</p>
+<footer class="fallback-footer">Built with Python, R, Quarto source, and public basketball data. Educational portfolio; not affiliated with the NBA or San Antonio Spurs.</footer>
+</body>
+</html>

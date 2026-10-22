@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>03 · Rotation Chemistry</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+<nav class="fallback-nav">
+<a class="brand" href="../../index.html">THE NEXT POSSESSION</a>
+<a href="../../index.html#explore-the-portfolio">Projects</a>
+<a href="../../methodology.html">Methods</a>
+<a href="../../data.html">Data</a>
+</nav>
+<h1 id="rotation-chemistry">03 · Rotation Chemistry</h1>
+<h2 id="decision-question">Decision question</h2>
+<p>Which player pairs and starting groups repeatedly coincide with
+positive game-level signals, and where is the sample large enough to
+justify deeper film or lineup analysis?</p>
+<h2 id="what-the-model-says">What the model says</h2>
+<p>The strongest high-sample box-score pair proxy is <strong>De’Aaron
+Fox + Jordan McLaughlin</strong> across <strong>43
+co-appearances</strong>. The most-used starting group logged <strong>44
+games</strong> with a <strong>0.727 win rate</strong> and a
+<strong>+10.9 average game margin</strong>.</p>
+<p>This section demonstrates an important analytical boundary:
+co-appearance and box plus/minus are not shared-possession lineup data.
+The project therefore exposes reliability and calls the result a
+<em>proxy</em>, making it a candidate generator for deeper play-by-play
+work rather than a causal conclusion.</p>
+<figure>
+<img src="../../assets/03_rotation_chemistry.png"
+alt="Rotation chemistry proxy" />
+<figcaption aria-hidden="true">Rotation chemistry proxy</figcaption>
+</figure>
+<h2 id="deliverables">Deliverables</h2>
+<ul>
+<li><a href="analysis.py">Python analysis</a> · <a href="analysis.R">R
+analysis</a></li>
+<li><a href="pair_chemistry_proxies.csv">Pair proxies</a> · <a
+href="starter_unit_proxies.csv">Starter-unit proxies</a></li>
+<li>Reliability weighting, combined assist/turnover ratio, co-appearance
+count, and average game margin.</li>
+</ul>
+<h2 id="analytical-boundary">Analytical boundary</h2>
+<p>This project does <strong>not</strong> claim that two players shared
+every recorded minute or caused the team result. It is a screening layer
+designed to identify questions for possession-level lineup data.</p>
+<footer class="fallback-footer">Built with Python, R, Quarto source, and public basketball data. Educational portfolio; not affiliated with the NBA or San Antonio Spurs.</footer>
+</body>
+</html>

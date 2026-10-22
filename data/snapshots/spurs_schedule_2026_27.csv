@@ -1,0 +1,81 @@
+game_id,date_utc,season,season_type,is_home,is_neutral,opponent,opponent_name,team_score,opponent_score,result,venue,city,state,status,status_detail,event_name
+401909090,2026-10-21 01:30:00+00:00,2026-27,Regular Season,True,False,OKC,Oklahoma City Thunder,,,,Frost Bank Center,San Antonio,TX,,,Oklahoma City Thunder at San Antonio Spurs
+401909096,2026-10-24 01:30:00+00:00,2026-27,Regular Season,True,False,HOU,Houston Rockets,,,,Moody Center,Austin,TX,,,Houston Rockets at San Antonio Spurs
+401909858,2026-10-25 00:00:00+00:00,2026-27,Regular Season,False,False,DAL,Dallas Mavericks,,,,American Airlines Center,Dallas,TX,,,San Antonio Spurs at Dallas Mavericks
+401909879,2026-10-28 00:00:00+00:00,2026-27,Regular Season,True,False,SAC,Sacramento Kings,,,,Frost Bank Center,San Antonio,TX,,,Sacramento Kings at San Antonio Spurs
+401909890,2026-10-29 01:00:00+00:00,2026-27,Regular Season,False,False,UTAH,Utah Jazz,,,,Delta Center,Salt Lake City,UT,,,San Antonio Spurs at Utah Jazz
+401909901,2026-11-01 00:00:00+00:00,2026-27,Regular Season,True,False,MIN,Minnesota Timberwolves,,,,Frost Bank Center,San Antonio,TX,,,Minnesota Timberwolves at San Antonio Spurs
+401909917,2026-11-03 01:30:00+00:00,2026-27,Regular Season,True,False,UTAH,Utah Jazz,,,,Frost Bank Center,San Antonio,TX,,,Utah Jazz at San Antonio Spurs
+401909933,2026-11-05 02:30:00+00:00,2026-27,Regular Season,True,False,DAL,Dallas Mavericks,,,,Frost Bank Center,San Antonio,TX,,,Dallas Mavericks at San Antonio Spurs
+401909295,2026-11-07 03:00:00+00:00,2026-27,Regular Season,False,False,SAC,Sacramento Kings,,,,Golden 1 Center,Sacramento,CA,,,San Antonio Spurs at Sacramento Kings
+401909944,2026-11-08 03:00:00+00:00,2026-27,Regular Season,False,False,POR,Portland Trail Blazers,,,,Moda Center,Portland,OR,,,San Antonio Spurs at Portland Trail Blazers
+401909958,2026-11-10 02:00:00+00:00,2026-27,Regular Season,False,False,PHX,Phoenix Suns,,,,Mortgage Matchup Center,Phoenix,AZ,,,San Antonio Spurs at Phoenix Suns
+401909969,2026-11-12 01:00:00+00:00,2026-27,Regular Season,False,False,CHI,Chicago Bulls,,,,United Center,Chicago,IL,,,San Antonio Spurs at Chicago Bulls
+401909302,2026-11-14 02:30:00+00:00,2026-27,Regular Season,True,False,GS,Golden State Warriors,,,,Frost Bank Center,San Antonio,TX,,,Golden State Warriors at San Antonio Spurs
+401909988,2026-11-15 22:00:00+00:00,2026-27,Regular Season,False,False,UTAH,Utah Jazz,,,,Delta Center,Salt Lake City,UT,,,San Antonio Spurs at Utah Jazz
+401910004,2026-11-18 01:00:00+00:00,2026-27,Regular Season,True,False,DET,Detroit Pistons,,,,Frost Bank Center,San Antonio,TX,,,Detroit Pistons at San Antonio Spurs
+401910022,2026-11-20 01:00:00+00:00,2026-27,Regular Season,True,False,LAC,LA Clippers,,,,Frost Bank Center,San Antonio,TX,,,LA Clippers at San Antonio Spurs
+401910027,2026-11-22 01:00:00+00:00,2026-27,Regular Season,True,False,NO,New Orleans Pelicans,,,,Frost Bank Center,San Antonio,TX,,,New Orleans Pelicans at San Antonio Spurs
+401910045,2026-11-24 03:00:00+00:00,2026-27,Regular Season,False,False,SAC,Sacramento Kings,,,,Golden 1 Center,Sacramento,CA,,,San Antonio Spurs at Sacramento Kings
+401909325,2026-11-26 03:00:00+00:00,2026-27,Regular Season,False,False,POR,Portland Trail Blazers,,,,Moda Center,Portland,OR,,,San Antonio Spurs at Portland Trail Blazers
+401909333,2026-11-28 02:30:00+00:00,2026-27,Regular Season,True,False,LAL,Los Angeles Lakers,,,,Frost Bank Center,San Antonio,TX,,,Los Angeles Lakers at San Antonio Spurs
+401910052,2026-11-29 21:00:00+00:00,2026-27,Regular Season,True,False,BOS,Boston Celtics,,,,Frost Bank Center,San Antonio,TX,,,Boston Celtics at San Antonio Spurs
+401910066,2026-12-01 01:00:00+00:00,2026-27,Regular Season,False,False,MIL,Milwaukee Bucks,,,,Fiserv Forum,Milwaukee,WI,,,San Antonio Spurs at Milwaukee Bucks
+401910088,2026-12-04 01:00:00+00:00,2026-27,Regular Season,True,False,TOR,Toronto Raptors,,,,Frost Bank Center,San Antonio,TX,,,Toronto Raptors at San Antonio Spurs
+401910102,2026-12-14 00:00:00+00:00,2026-27,Regular Season,True,False,LAC,LA Clippers,,,,Frost Bank Center,San Antonio,TX,,,LA Clippers at San Antonio Spurs
+401910115,2026-12-16 01:00:00+00:00,2026-27,Regular Season,False,False,CLE,Cleveland Cavaliers,,,,Rocket Arena,Cleveland,OH,,,San Antonio Spurs at Cleveland Cavaliers
+401910123,2026-12-17 00:30:00+00:00,2026-27,Regular Season,False,False,TOR,Toronto Raptors,,,,Scotiabank Arena,Toronto,ON,,,San Antonio Spurs at Toronto Raptors
+401910144,2026-12-19 01:00:00+00:00,2026-27,Regular Season,True,False,CHI,Chicago Bulls,,,,Frost Bank Center,San Antonio,TX,,,Chicago Bulls at San Antonio Spurs
+401910155,2026-12-21 00:00:00+00:00,2026-27,Regular Season,False,False,NO,New Orleans Pelicans,,,,Smoothie King Center,New Orleans,LA,,,San Antonio Spurs at New Orleans Pelicans
+401910166,2026-12-22 01:00:00+00:00,2026-27,Regular Season,True,False,MIL,Milwaukee Bucks,,,,Frost Bank Center,San Antonio,TX,,,Milwaukee Bucks at San Antonio Spurs
+401910176,2026-12-24 00:30:00+00:00,2026-27,Regular Season,False,False,BKN,Brooklyn Nets,,,,Barclays Center,Brooklyn,NY,,,San Antonio Spurs at Brooklyn Nets
+401909097,2026-12-25 17:00:00+00:00,2026-27,Regular Season,False,False,NY,New York Knicks,,,,Madison Square Garden,New York,NY,,,San Antonio Spurs at New York Knicks
+401910202,2026-12-28 00:00:00+00:00,2026-27,Regular Season,True,False,ATL,Atlanta Hawks,,,,Frost Bank Center,San Antonio,TX,,,Atlanta Hawks at San Antonio Spurs
+401910215,2026-12-30 01:00:00+00:00,2026-27,Regular Season,False,False,MEM,Memphis Grizzlies,,,,FedExForum,Memphis,TN,,,San Antonio Spurs at Memphis Grizzlies
+401910226,2026-12-31 18:00:00+00:00,2026-27,Regular Season,False,False,CHA,Charlotte Hornets,,,,Spectrum Center,Charlotte,NC,,,San Antonio Spurs at Charlotte Hornets
+401910235,2027-01-01 22:00:00+00:00,2026-27,Regular Season,False,False,WSH,Washington Wizards,,,,Capital One Arena,Washington,DC,,,San Antonio Spurs at Washington Wizards
+401910257,2027-01-04 00:00:00+00:00,2026-27,Regular Season,False,False,MIN,Minnesota Timberwolves,,,,Target Center,Minneapolis,MN,,,San Antonio Spurs at Minnesota Timberwolves
+401910277,2027-01-07 01:00:00+00:00,2026-27,Regular Season,True,False,IND,Indiana Pacers,,,,Frost Bank Center,San Antonio,TX,,,Indiana Pacers at San Antonio Spurs
+401910295,2027-01-09 01:00:00+00:00,2026-27,Regular Season,True,False,MEM,Memphis Grizzlies,,,,Frost Bank Center,San Antonio,TX,,,Memphis Grizzlies at San Antonio Spurs
+401910305,2027-01-10 20:00:00+00:00,2026-27,Regular Season,False,False,ATL,Atlanta Hawks,,,,State Farm Arena,Atlanta,GA,,,San Antonio Spurs at Atlanta Hawks
+401910334,2027-01-14 19:00:00+00:00,2026-27,Regular Season,True,True,NO,New Orleans Pelicans,,,,Accor Arena,Paris,,,,New Orleans Pelicans at San Antonio Spurs
+401910357,2027-01-17 15:30:00+00:00,2026-27,Regular Season,False,True,NO,New Orleans Pelicans,,,,Co-op Live,Manchester,,,,San Antonio Spurs at New Orleans Pelicans
+401910383,2027-01-21 02:30:00+00:00,2026-27,Regular Season,True,False,MIA,Miami Heat,,,,Frost Bank Center,San Antonio,TX,,,Miami Heat at San Antonio Spurs
+401910396,2027-01-23 02:30:00+00:00,2026-27,Regular Season,True,False,MIN,Minnesota Timberwolves,,,,Frost Bank Center,San Antonio,TX,,,Minnesota Timberwolves at San Antonio Spurs
+401910406,2027-01-24 20:30:00+00:00,2026-27,Regular Season,True,False,POR,Portland Trail Blazers,,,,Frost Bank Center,San Antonio,TX,,,Portland Trail Blazers at San Antonio Spurs
+401910424,2027-01-27 01:00:00+00:00,2026-27,Regular Season,True,False,HOU,Houston Rockets,,,,Frost Bank Center,San Antonio,TX,,,Houston Rockets at San Antonio Spurs
+401910433,2027-01-28 01:00:00+00:00,2026-27,Regular Season,True,False,CHA,Charlotte Hornets,,,,Frost Bank Center,San Antonio,TX,,,Charlotte Hornets at San Antonio Spurs
+401910453,2027-01-30 22:30:00+00:00,2026-27,Regular Season,False,False,GS,Golden State Warriors,,,,Chase Center,San Francisco,CA,,,San Antonio Spurs at Golden State Warriors
+401910473,2027-02-02 03:00:00+00:00,2026-27,Regular Season,False,False,GS,Golden State Warriors,,,,Chase Center,San Francisco,CA,,,San Antonio Spurs at Golden State Warriors
+401910480,2027-02-03 03:30:00+00:00,2026-27,Regular Season,False,False,LAC,LA Clippers,,,,Intuit Dome,Inglewood,CA,,,San Antonio Spurs at LA Clippers
+401910494,2027-02-05 01:00:00+00:00,2026-27,Regular Season,True,False,ORL,Orlando Magic,,,,Frost Bank Center,San Antonio,TX,,,Orlando Magic at San Antonio Spurs
+401910511,2027-02-07 01:30:00+00:00,2026-27,Regular Season,True,False,LAL,Los Angeles Lakers,,,,Frost Bank Center,San Antonio,TX,,,Los Angeles Lakers at San Antonio Spurs
+401910533,2027-02-10 01:00:00+00:00,2026-27,Regular Season,False,False,DAL,Dallas Mavericks,,,,American Airlines Center,Dallas,TX,,,San Antonio Spurs at Dallas Mavericks
+401910551,2027-02-12 02:30:00+00:00,2026-27,Regular Season,False,False,OKC,Oklahoma City Thunder,,,,Paycom Center,Oklahoma City,OK,,,San Antonio Spurs at Oklahoma City Thunder
+401910564,2027-02-14 00:00:00+00:00,2026-27,Regular Season,False,False,ORL,Orlando Magic,,,,Kia Center,Orlando,FL,,,San Antonio Spurs at Orlando Magic
+401909479,2027-02-15 22:00:00+00:00,2026-27,Regular Season,False,False,MIA,Miami Heat,,,,Kaseya Center,Miami,FL,,,San Antonio Spurs at Miami Heat
+401910590,2027-02-18 01:00:00+00:00,2026-27,Regular Season,False,False,MEM,Memphis Grizzlies,,,,FedExForum,Memphis,TN,,,San Antonio Spurs at Memphis Grizzlies
+401910596,2027-02-19 00:30:00+00:00,2026-27,Regular Season,False,False,MIN,Minnesota Timberwolves,,,,Target Center,Minneapolis,MN,,,San Antonio Spurs at Minnesota Timberwolves
+401910613,2027-02-27 01:00:00+00:00,2026-27,Regular Season,True,False,MEM,Memphis Grizzlies,,,,Moody Center,Austin,TX,,,Memphis Grizzlies at San Antonio Spurs
+401910623,2027-02-28 18:00:00+00:00,2026-27,Regular Season,True,False,DEN,Denver Nuggets,,,,Moody Center,Austin,TX,,,Denver Nuggets at San Antonio Spurs
+401910653,2027-03-04 03:00:00+00:00,2026-27,Regular Season,False,False,DEN,Denver Nuggets,,,,Ball Arena,Denver,CO,,,San Antonio Spurs at Denver Nuggets
+401910667,2027-03-06 02:30:00+00:00,2026-27,Regular Season,False,False,HOU,Houston Rockets,,,,Toyota Center (Houston),Houston,TX,,,San Antonio Spurs at Houston Rockets
+401910678,2027-03-08 00:30:00+00:00,2026-27,Regular Season,True,False,NY,New York Knicks,,,,Frost Bank Center,San Antonio,TX,,,New York Knicks at San Antonio Spurs
+401910694,2027-03-10 01:00:00+00:00,2026-27,Regular Season,True,False,WSH,Washington Wizards,,,,Frost Bank Center,San Antonio,TX,,,Washington Wizards at San Antonio Spurs
+401910707,2027-03-12 00:30:00+00:00,2026-27,Regular Season,True,False,PHI,Philadelphia 76ers,,,,Frost Bank Center,San Antonio,TX,,,Philadelphia 76ers at San Antonio Spurs
+401910728,2027-03-14 18:30:00+00:00,2026-27,Regular Season,False,False,OKC,Oklahoma City Thunder,,,,Paycom Center,Oklahoma City,OK,,,San Antonio Spurs at Oklahoma City Thunder
+401910745,2027-03-17 00:30:00+00:00,2026-27,Regular Season,False,False,HOU,Houston Rockets,,,,Toyota Center (Houston),Houston,TX,,,San Antonio Spurs at Houston Rockets
+401910762,2027-03-19 00:00:00+00:00,2026-27,Regular Season,True,False,BKN,Brooklyn Nets,,,,Frost Bank Center,San Antonio,TX,,,Brooklyn Nets at San Antonio Spurs
+401910768,2027-03-20 00:00:00+00:00,2026-27,Regular Season,True,False,DAL,Dallas Mavericks,,,,Frost Bank Center,San Antonio,TX,,,Dallas Mavericks at San Antonio Spurs
+401910784,2027-03-21 23:30:00+00:00,2026-27,Regular Season,False,False,PHI,Philadelphia 76ers,,,,Xfinity Mobile Arena,Philadelphia,PA,,,San Antonio Spurs at Philadelphia 76ers
+401910803,2027-03-24 23:30:00+00:00,2026-27,Regular Season,False,False,BOS,Boston Celtics,,,,TD Garden,Boston,MA,,,San Antonio Spurs at Boston Celtics
+401910813,2027-03-25 23:00:00+00:00,2026-27,Regular Season,False,False,IND,Indiana Pacers,,,,Gainbridge Fieldhouse,Indianapolis,IN,,,San Antonio Spurs at Indiana Pacers
+401910824,2027-03-27 19:00:00+00:00,2026-27,Regular Season,False,False,DET,Detroit Pistons,,,,Little Caesars Arena,Detroit,MI,,,San Antonio Spurs at Detroit Pistons
+401910846,2027-03-30 01:30:00+00:00,2026-27,Regular Season,True,False,PHX,Phoenix Suns,,,,Frost Bank Center,San Antonio,TX,,,Phoenix Suns at San Antonio Spurs
+401910861,2027-04-01 00:00:00+00:00,2026-27,Regular Season,True,False,PHX,Phoenix Suns,,,,Frost Bank Center,San Antonio,TX,,,Phoenix Suns at San Antonio Spurs
+401910879,2027-04-03 02:30:00+00:00,2026-27,Regular Season,False,False,LAC,LA Clippers,,,,Intuit Dome,Inglewood,CA,,,San Antonio Spurs at LA Clippers
+401910894,2027-04-05 02:00:00+00:00,2026-27,Regular Season,False,False,LAL,Los Angeles Lakers,,,,crypto.com Arena,Los Angeles,CA,,,San Antonio Spurs at Los Angeles Lakers
+401910903,2027-04-07 00:00:00+00:00,2026-27,Regular Season,True,False,SAC,Sacramento Kings,,,,Frost Bank Center,San Antonio,TX,,,Sacramento Kings at San Antonio Spurs
+401910912,2027-04-07 23:30:00+00:00,2026-27,Regular Season,True,False,CLE,Cleveland Cavaliers,,,,Frost Bank Center,San Antonio,TX,,,Cleveland Cavaliers at San Antonio Spurs
+401910932,2027-04-10 01:30:00+00:00,2026-27,Regular Season,True,False,DEN,Denver Nuggets,,,,Frost Bank Center,San Antonio,TX,,,Denver Nuggets at San Antonio Spurs
+401910947,2027-04-12 00:30:00+00:00,2026-27,Regular Season,True,False,POR,Portland Trail Blazers,,,,Frost Bank Center,San Antonio,TX,,,Portland Trail Blazers at San Antonio Spurs

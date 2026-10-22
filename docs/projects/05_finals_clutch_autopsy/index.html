@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>05 · Finals Clutch Autopsy</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+<nav class="fallback-nav">
+<a class="brand" href="../../index.html">THE NEXT POSSESSION</a>
+<a href="../../index.html#explore-the-portfolio">Projects</a>
+<a href="../../methodology.html">Methods</a>
+<a href="../../data.html">Data</a>
+</nav>
+<h1 id="finals-clutch-autopsy">05 · Finals Clutch Autopsy</h1>
+<h2 id="decision-question">Decision question</h2>
+<p>When did San Antonio’s Finals leads erode, how often did games reach
+the NBA clutch definition, and which possessions should be tagged for
+tactical review?</p>
+<h2 id="what-the-model-says">What the model says</h2>
+<p>San Antonio held a lead of at least <strong>29 points</strong> in the
+series, yet its average peak-to-final swing was <strong>18.8
+points</strong>. Across the five games there were <strong>267
+clutch-state plays</strong>—fourth quarter, five minutes or less, score
+within five—despite the 4–1 series result.</p>
+<p>This is the most actionable offseason story in the portfolio: the gap
+was not simply “talent.” The play-by-play view isolates when control
+changed and creates a clean base for possession tagging, timeout
+sequencing, shot-quality review, and late-clock decision analysis.</p>
+<figure>
+<img src="../../assets/05_finals_leads.png"
+alt="Finals lead progression" />
+<figcaption aria-hidden="true">Finals lead progression</figcaption>
+</figure>
+<h2 id="deliverables">Deliverables</h2>
+<ul>
+<li><a href="analysis.py">Python analysis</a> · <a href="analysis.R">R
+analysis</a></li>
+<li><a href="finals_play_by_play_enriched.csv">Enriched Finals
+play-by-play</a> · <a href="finals_lead_summary.csv">Game
+summary</a></li>
+<li>Spurs-perspective margin, win probability, clutch-state flags, peak
+lead, final margin, and peak-to-final swing.</li>
+</ul>
+<h2 id="next-extension">Next extension</h2>
+<p>Create a human-in-the-loop possession taxonomy for coverage, primary
+action, advantage creation, decision quality, and timeout/lineup
+context; test inter-rater agreement before modeling.</p>
+<footer class="fallback-footer">Built with Python, R, Quarto source, and public basketball data. Educational portfolio; not affiliated with the NBA or San Antonio Spurs.</footer>
+</body>
+</html>

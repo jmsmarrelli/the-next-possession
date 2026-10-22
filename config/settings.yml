@@ -1,0 +1,29 @@
+portfolio:
+  title: "The Next Possession"
+  subtitle: "Seven data projects for the 2026–27 San Antonio Spurs"
+  team_abbreviation: "SA"
+  team_bref: "SAS"
+  team_espn: "sas"
+  prior_season: 2026
+  forecast_season: 2027
+  season_label: "2026-27"
+  prior_season_label: "2025-26"
+  timezone: "America/Chicago"
+  random_seed: 210
+
+model:
+  home_court_points: 2.2
+  margin_sd: 12.0
+  prior_rating_weight: 0.72
+  schedule_simulations: 25000
+  playoff_simulations: 50000
+  contender_count: 12
+
+data:
+  espn_schedule_url: "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/{team}/schedule"
+  espn_roster_url: "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/{team}/roster"
+  espn_summary_url: "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary"
+  basketball_reference_base: "https://www.basketball-reference.com/leagues/NBA_{season}_{table}.html"
+  request_timeout_seconds: 45
+  request_pause_seconds: 0.15
+

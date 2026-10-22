@@ -1,0 +1,25 @@
+Package: spurslabR
+Title: R Analytics for The Next Possession
+Version: 0.1.0
+Authors@R: person("Portfolio", "Author", role = c("aut", "cre"), email = "portfolio@example.com")
+Author: Portfolio Author [aut, cre]
+Maintainer: Portfolio Author <portfolio@example.com>
+Description: Reproducible R implementations of schedule, lineup-proxy, player,
+    play-by-play, and simulation projects centered on the 2026-27 San Antonio Spurs.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: R (>= 4.2.0)
+Imports:
+    dplyr (>= 1.1.0),
+    lubridate,
+    purrr,
+    readr,
+    rlang,
+    tibble,
+    yaml
+Suggests:
+    arrow,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

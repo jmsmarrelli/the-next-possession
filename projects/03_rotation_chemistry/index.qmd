@@ -1,0 +1,21 @@
+---
+title: "03 · Rotation Chemistry"
+description: "Which co-appearance signals deserve possession-level follow-up?"
+---
+
+## Decision question
+
+Which player pairs and starting groups repeatedly coincide with positive game-level signals, and where is the sample large enough to justify deeper film or lineup analysis?
+
+{{< include ../../reports/03_rotation_chemistry.md >}}
+
+## Deliverables
+
+- [Python analysis](analysis.py) · [R analysis](analysis.R)
+- [Pair proxies](pair_chemistry_proxies.csv) · [Starter-unit proxies](starter_unit_proxies.csv)
+- Reliability weighting, combined assist/turnover ratio, co-appearance count, and average game margin.
+
+## Analytical boundary
+
+This project does **not** claim that two players shared every recorded minute or caused the team result. It is a screening layer designed to identify questions for possession-level lineup data.
+

@@ -1,0 +1,21 @@
+---
+title: "07 · Title Odds"
+description: "A transparent preseason baseline built to be updated."
+---
+
+## Decision question
+
+What do prior team strength and the assigned schedule imply before the season begins, and how should that baseline update when new evidence arrives?
+
+{{< include ../../reports/07_title_odds.md >}}
+
+## Deliverables
+
+- [Python analysis](analysis.py) · [R analysis](analysis.R)
+- [Game probabilities](game_win_probabilities.csv) · [Win summary](schedule_simulation_summary.csv) · [Distribution](win_distribution.csv) · [Contender title odds](contender_title_odds.csv)
+- Fixed seeds, explicit home/rest/travel assumptions, and scenario-ready intermediate columns.
+
+## Next extension
+
+Move to Bayesian sequential updating, publish calibration curves and Brier scores, and incorporate player-availability priors without letting current betting markets become an opaque substitute for basketball assumptions.
+

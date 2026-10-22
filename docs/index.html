@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>The Next Possession</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<nav class="fallback-nav">
+<a class="brand" href="index.html">THE NEXT POSSESSION</a>
+<a href="index.html#explore-the-portfolio">Projects</a>
+<a href="methodology.html">Methods</a>
+<a href="data.html">Data</a>
+</nav>
+<div class="hero">
+<div class="eyebrow">
+2026–27 San Antonio Spurs · NBA analytics portfolio
+</div>
+<h1 id="seven-questions-between-san-antonio-and-a-title.">Seven
+questions between San Antonio and a title.</h1>
+<p>Python and R projects built around a defending Western Conference
+champion, a generational two-way centerpiece, and an unfinished Finals
+story.</p>
+</div>
+<h2 id="portfolio-thesis">Portfolio thesis</h2>
+<p>San Antonio enters 2026–27 as a defending Western Conference champion
+with a real two-way title profile. These seven projects turn that
+context into a coherent decision system: <strong>where the schedule
+applies pressure, which contenders define the bar, which rotation
+combinations deserve deeper study, how much outcomes move with
+Wembanyama’s availability, why the Finals slipped, where roster
+archetypes overlap, and what a transparent preseason simulation
+implies.</strong></p>
+<h3 id="headline-outputs">Headline outputs</h3>
+<ul>
+<li><strong>Schedule:</strong> 80 assigned games, 13 back-to-backs,
+about 53,962 travel miles.</li>
+<li><strong>Prior-year level:</strong> No. 2 adjusted margin, +8.24 per
+100.</li>
+<li><strong>Finals pressure point:</strong> 18.8-point average
+peak-to-final swing.</li>
+<li><strong>Simulation baseline:</strong> 54.1 wins in assigned games;
+No. 2 among modeled title contenders.</li>
+</ul>
+<p>Each project has paired Python and R entry points, an analysis-ready
+CSV, methods and limitations, and a rendered visual. The build is
+deterministic at seed 210.</p>
+<h2 id="explore-the-portfolio">Explore the portfolio</h2>
+<div class="project-grid">
+<a class="project-card" href="projects/01_schedule_gauntlet/index.html">
+<div class="project-number">
+PROJECT 01
+</div>
+<h3>
+Schedule Gauntlet
+</h3>
+<p>
+Travel, rest, density, international dates, and the hardest 2026–27
+stretches.
+</p>
+</a>
+<a class="project-card" href="projects/02_contender_landscape/index.html">
+<div class="project-number">
+PROJECT 02
+</div>
+<h3>
+Contender Landscape
+</h3>
+<p>
+Where the Spurs sit on the league’s offense-defense map—and who defines
+the bar.
+</p>
+</a>
+<a class="project-card" href="projects/03_rotation_chemistry/index.html">
+<div class="project-number">
+PROJECT 03
+</div>
+<h3>
+Rotation Chemistry
+</h3>
+<p>
+Auditable co-appearance and starting-unit proxies, with the analytical
+boundary intact.
+</p>
+</a> <a class="project-card" href="projects/04_wemby_impact/index.html">
+<div class="project-number">
+PROJECT 04
+</div>
+<h3>
+Wemby Impact
+</h3>
+<p>
+The game-level availability split for the reigning Defensive Player of
+the Year.
+</p>
+</a>
+<a class="project-card" href="projects/05_finals_clutch_autopsy/index.html">
+<div class="project-number">
+PROJECT 05
+</div>
+<h3>
+Finals Clutch Autopsy
+</h3>
+<p>
+Five close games, four surrendered double-digit leads, and the moments
+where control changed.
+</p>
+</a>
+<a class="project-card" href="projects/06_player_archetypes/index.html">
+<div class="project-number">
+PROJECT 06
+</div>
+<h3>
+Player Archetypes
+</h3>
+<p>
+Leaguewide role clusters for roster fit, redundancy, and
+complementary-player searches.
+</p>
+</a> <a class="project-card" href="projects/07_title_odds/index.html">
+<div class="project-number">
+PROJECT 07
+</div>
+<h3>
+Title Odds
+</h3>
+<p>
+Game probabilities, schedule wins, and a transparent preseason contender
+simulation.
+</p>
+<p></a></p>
+</div>
+<h2 id="why-this-season">Why this season</h2>
+<p>The 2025–26 Spurs went 62–20, beat Oklahoma City in seven games to
+win the West, then lost a closer-than-4–1 Finals to New York. Victor
+Wembanyama earned First-Team All-NBA and Defensive Player of the Year
+honors; Keldon Johnson won Sixth Man of the Year. The 2026–27 schedule
+opens at home against the Thunder and includes a Christmas Finals
+rematch at Madison Square Garden plus games in Paris and Manchester.</p>
+<p>That is the portfolio’s through-line: <strong>turn last year’s
+breakthrough and last possession failures into this year’s decision
+questions.</strong></p>
+<h2 id="reproducibility-at-a-glance">Reproducibility at a glance</h2>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> venv .venv</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> pip install <span class="at">-e</span> <span class="st">&quot;.[dev,notebooks]&quot;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">spurslab</span> all</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code></pre></div>
+<p>R implementations live in <code>R/spurslabR/</code> and beside every
+project as <code>analysis.R</code>. Network calls are cached; committed
+snapshots keep the showcase runnable offline.</p>
+<footer class="fallback-footer">Built with Python, R, Quarto source, and public basketball data. Educational portfolio; not affiliated with the NBA or San Antonio Spurs.</footer>
+</body>
+</html>
