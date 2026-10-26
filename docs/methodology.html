@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Methods &amp; model cards</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<nav class="fallback-nav">
+<a class="brand" href="index.html">THE NEXT POSSESSION</a>
+<a href="index.html#explore-the-portfolio">Projects</a>
+<a href="methodology.html">Methods</a>
+<a href="data.html">Data</a>
+</nav>
+<h1 id="methods-model-cards">Methods &amp; model cards</h1>
+<h2 id="design-principles">Design principles</h2>
+<ol type="1">
+<li><strong>Decision first.</strong> Every project starts with a Spurs
+question, not an algorithm looking for a home.</li>
+<li><strong>Claims match the data.</strong> Boxscore co-appearance is
+called a proxy; availability splits are descriptive; simulations are
+baselines.</li>
+<li><strong>One source of truth.</strong> Python and R read the same
+snapshots and share configuration values.</li>
+<li><strong>Rebuildable artifacts.</strong> Each chart is generated from
+an exported analysis table, with fixed random seed 210.</li>
+<li><strong>Graceful upstream failure.</strong> Raw responses are cached
+and processed CSV/Parquet snapshots support offline review.</li>
+</ol>
+<h2 id="project-model-cards">Project model cards</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Project</th>
+<th>Method</th>
+<th>Primary output</th>
+<th>Main limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schedule Gauntlet</td>
+<td>Great-circle travel + rolling schedule-density index</td>
+<td>Per-game stress score</td>
+<td>Does not observe charter timing or recovery data</td>
+</tr>
+<tr>
+<td>Contender Landscape</td>
+<td>Adjusted offensive/defensive ratings</td>
+<td>Two-way contender map</td>
+<td>Prior-year snapshot, not current-season form</td>
+</tr>
+<tr>
+<td>Rotation Co-appearance</td>
+<td>Pair co-appearance aggregation + starter-unit summaries</td>
+<td>Heuristic co-appearance score</td>
+<td>Not possession-level shared minutes</td>
+</tr>
+<tr>
+<td>Wemby Impact</td>
+<td>Played/out descriptive game split</td>
+<td>Win rate and margin split</td>
+<td>Confounding from opponent and teammate availability</td>
+</tr>
+<tr>
+<td>Finals Clutch Autopsy</td>
+<td>Play-by-play score state + win probability</td>
+<td>Lead trajectories and clutch states</td>
+<td>Play descriptions do not encode tactical intent</td>
+</tr>
+<tr>
+<td>Player Archetypes</td>
+<td>Standardized features + k-means</td>
+<td>Eight leaguewide role clusters</td>
+<td>Labels are descriptive, not player value rankings</td>
+</tr>
+<tr>
+<td>Tournament Scenario</td>
+<td>Normal-margin game model + Monte Carlo</td>
+<td>Win distribution and title baseline</td>
+<td>Excludes injuries and explicit roster-change priors</td>
+</tr>
+</tbody>
+</table>
+<h2 id="simulation-specification">Simulation specification</h2>
+<p>The per-game model starts from 72% of the prior season’s adjusted net
+rating, adds 2.2 points for home court, and applies small documented
+rest, travel, and schedule-stress adjustments. Expected margins are
+converted to win probabilities under a 12-point standard deviation. The
+schedule simulation uses 25,000 draws; the contender knockout baseline
+uses 50,000.</p>
+<p>The schedule currently has 80 assigned dates because two NBA Cup flex
+games are not yet determined. Projected wins therefore apply only to
+assigned games and are labeled that way everywhere.</p>
+<h2 id="rpython-parity">R/Python parity</h2>
+<p>The paired implementations prioritize identical inputs, feature
+definitions, and exported schemas.
+<code>scripts/verify_r_parity.py</code> executes the full R build,
+verifies identifier coverage, and compares core numeric columns within
+explicit tolerances. The two title models intentionally differ slightly:
+Python simulates best-of-seven series explicitly, while R includes a
+dependency-light Bradley–Terry approximation as a sensitivity
+baseline.</p>
+<p><a href="VALIDATION.md">Read the completed validation report</a>.</p>
+<footer class="fallback-footer">Built with Python, R, Quarto source, and public basketball data. Educational portfolio; not affiliated with the NBA or San Antonio Spurs.</footer>
+</body>
+</html>

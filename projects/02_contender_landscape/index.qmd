@@ -1,0 +1,21 @@
+---
+title: "02 · Contender Landscape"
+description: "The two-way profiles San Antonio must beat."
+---
+
+## Decision question
+
+How large was the prior-year quality gap between San Antonio and the league's best teams, and did it live more on offense or defense?
+
+{{< include ../../reports/02_contender_landscape.md >}}
+
+## Deliverables
+
+- [Python analysis](analysis.py) · [R analysis](analysis.R)
+- [Top-12 contender ratings](contender_ratings.csv)
+- Adjusted offense, defense, net rating, win percentage, conference, and league rank.
+
+## Next extension
+
+Blend current-season rolling ratings with lineup availability and strength of schedule, then add opponent-style dimensions such as transition frequency and rim/three shot mix.
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>07 · Tournament Scenario</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+<nav class="fallback-nav">
+<a class="brand" href="../../index.html">THE NEXT POSSESSION</a>
+<a href="../../index.html#explore-the-portfolio">Projects</a>
+<a href="../../methodology.html">Methods</a>
+<a href="../../data.html">Data</a>
+</nav>
+<h1 id="tournament-scenario">07 · Tournament Scenario</h1>
+<h2 id="decision-question">Decision question</h2>
+<p>What do prior team strength and the assigned schedule imply before
+the season begins, and how should that baseline update when new evidence
+arrives?</p>
+<h2 id="what-the-model-says">What the model says</h2>
+<p>The schedule model projects <strong>54.1 wins across the 80 currently
+assigned games</strong>. In the separate contender knockout baseline,
+San Antonio ranks <strong>No. 2</strong> with a <strong>15.0% chance of
+winning this illustrative tournament</strong>.</p>
+<p>The schedule calculation uses assumed coefficients that have not been
+calibrated on held-out seasons. Its simulation interval conditions on
+those fixed assumptions; it excludes parameter and roster uncertainty.
+The separate tournament has random matchups, neutral-site best-of-seven
+series and random byes. It omits conferences and play-in qualification,
+so its probabilities are <strong>not NBA championship odds</strong>. CSV
+column names retain the legacy title_probability label for
+compatibility.</p>
+<figure>
+<img src="../../assets/07_title_odds.png"
+alt="Illustrative neutral-site tournament" />
+<figcaption aria-hidden="true">Illustrative neutral-site
+tournament</figcaption>
+</figure>
+<figure>
+<img src="../../assets/07_win_distribution.png"
+alt="Win distribution" />
+<figcaption aria-hidden="true">Win distribution</figcaption>
+</figure>
+<h2 id="deliverables">Deliverables</h2>
+<ul>
+<li><a href="analysis.py">Python analysis</a> · <a href="analysis.R">R
+analysis</a></li>
+<li><a href="game_win_probabilities.csv">Game probabilities</a> · <a
+href="schedule_simulation_summary.csv">Win summary</a> · <a
+href="win_distribution.csv">Distribution</a> · <a
+href="contender_title_odds.csv">Contender title odds</a></li>
+<li>Fixed seeds, explicit home/rest/travel assumptions, and
+scenario-ready intermediate columns.</li>
+</ul>
+<h2 id="next-extension">Next extension</h2>
+<p>Move to Bayesian sequential updating, publish calibration curves and
+Brier scores, and incorporate player-availability priors without letting
+current betting markets become an opaque substitute for basketball
+assumptions.</p>
+<footer class="fallback-footer">Built with Python, R, Quarto source, and public basketball data. Educational portfolio; not affiliated with the NBA or San Antonio Spurs.</footer>
+</body>
+</html>

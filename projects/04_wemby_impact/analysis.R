@@ -1,0 +1,6 @@
+source(file.path("R", "bootstrap.R"))
+box <- read_snapshot("spurs_player_boxscores_2025_26", root)
+schedule <- read_snapshot("spurs_schedule_2025_26", root)
+impact <- wemby_game_impact(box, schedule)
+readr::write_csv(impact$games, file.path(root, "projects", "04_wemby_impact", "wemby_game_splits_r.csv"))
+readr::write_csv(impact$summary, file.path(root, "projects", "04_wemby_impact", "wemby_impact_summary_r.csv"))

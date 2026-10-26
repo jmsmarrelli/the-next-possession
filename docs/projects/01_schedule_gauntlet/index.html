@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>01 · Schedule Gauntlet</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+<nav class="fallback-nav">
+<a class="brand" href="../../index.html">THE NEXT POSSESSION</a>
+<a href="../../index.html#explore-the-portfolio">Projects</a>
+<a href="../../methodology.html">Methods</a>
+<a href="../../data.html">Data</a>
+</nav>
+<h1 id="schedule-gauntlet">01 · Schedule Gauntlet</h1>
+<h2 id="decision-question">Decision question</h2>
+<p>Which assigned games and stretches deserve proactive rotation
+planning, and where does the Europe trip alter the normal rest/travel
+pattern?</p>
+<h2 id="what-the-model-says">What the model says</h2>
+<p>The published schedule currently contains <strong>80 assigned
+games</strong>; two NBA Cup flex slots remain unresolved. Across those
+assigned dates, San Antonio has <strong>13 back-to-backs</strong>,
+<strong>18 three-games-in-four-nights spots</strong>, and roughly
+<strong>53,962 miles</strong> of venue-to-venue travel. The
+highest-stress assigned date is <strong>Dec 21 vs MIL</strong> (score
+70.1).</p>
+<p>The stress score is an auditable index—not an injury prediction. It
+combines rest, recent game density, travel distance, time-zone changes,
+and international travel. Every component is retained in the
+downloadable result table.</p>
+<figure>
+<img src="../../assets/01_schedule_stress.png"
+alt="Hardest schedule spots" />
+<figcaption aria-hidden="true">Hardest schedule spots</figcaption>
+</figure>
+<h2 id="deliverables">Deliverables</h2>
+<ul>
+<li><a href="analysis.py">Python analysis</a> · <a href="analysis.R">R
+analysis</a></li>
+<li><a href="schedule_stress.csv">Per-game stress table</a></li>
+<li>Features: rest days, back-to-back, games in four/seven days, travel
+miles, time-zone crossings, international indicator, stress tier.</li>
+</ul>
+<h2 id="next-extension">Next extension</h2>
+<p>Add expected player workload and arena-to-hotel travel timing once
+operational data is available; validate whether the stress index
+predicts residual performance after opponent strength and home
+court.</p>
+<footer class="fallback-footer">Built with Python, R, Quarto source, and public basketball data. Educational portfolio; not affiliated with the NBA or San Antonio Spurs.</footer>
+</body>
+</html>

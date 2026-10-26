@@ -1,0 +1,8 @@
+metric,value
+mean_wins,54.09224
+median_wins,54.0
+p10_wins,49.0
+p90_wins,59.0
+prob_50_plus,0.87188
+prob_55_plus,0.46476
+prob_60_plus,0.08856

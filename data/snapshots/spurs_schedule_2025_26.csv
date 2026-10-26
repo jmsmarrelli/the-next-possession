@@ -1,0 +1,107 @@
+game_id,date_utc,season,season_type,is_home,is_neutral,opponent,opponent_name,team_score,opponent_score,result,venue,city,state,status,status_detail,event_name
+401809235,2025-10-23 01:47:00+00:00,2025-26,Regular Season,False,False,DAL,Dallas Mavericks,125.0,92.0,W,American Airlines Center,Dallas,TX,,,San Antonio Spurs at Dallas Mavericks
+401809949,2025-10-25 00:00:00+00:00,2025-26,Regular Season,False,False,NO,New Orleans Pelicans,120.0,116.0,W,Smoothie King Center,New Orleans,LA,,,San Antonio Spurs at New Orleans Pelicans
+401809960,2025-10-26 18:00:00+00:00,2025-26,Regular Season,True,False,BKN,Brooklyn Nets,118.0,107.0,W,Frost Bank Center,San Antonio,TX,,,Brooklyn Nets at San Antonio Spurs
+401809973,2025-10-28 00:00:00+00:00,2025-26,Regular Season,True,False,TOR,Toronto Raptors,121.0,103.0,W,Frost Bank Center,San Antonio,TX,,,Toronto Raptors at San Antonio Spurs
+401809996,2025-10-31 00:30:00+00:00,2025-26,Regular Season,True,False,MIA,Miami Heat,107.0,101.0,W,Frost Bank Center,San Antonio,TX,,,Miami Heat at San Antonio Spurs
+401810009,2025-11-03 01:00:00+00:00,2025-26,Regular Season,False,False,PHX,Phoenix Suns,118.0,130.0,L,Mortgage Matchup Center,Phoenix,AZ,,,San Antonio Spurs at Phoenix Suns
+401810034,2025-11-06 03:00:00+00:00,2025-26,Regular Season,False,False,LAL,Los Angeles Lakers,116.0,118.0,L,crypto.com Arena,Los Angeles,CA,,,San Antonio Spurs at Los Angeles Lakers
+401809774,2025-11-08 00:30:00+00:00,2025-26,Regular Season,True,False,HOU,Houston Rockets,121.0,110.0,W,Frost Bank Center,San Antonio,TX,,,Houston Rockets at San Antonio Spurs
+401810043,2025-11-09 01:00:00+00:00,2025-26,Regular Season,True,False,NO,New Orleans Pelicans,126.0,119.0,W,Frost Bank Center,San Antonio,TX,,,New Orleans Pelicans at San Antonio Spurs
+401810057,2025-11-11 01:00:00+00:00,2025-26,Regular Season,False,False,CHI,Chicago Bulls,121.0,117.0,W,United Center,Chicago,IL,,,San Antonio Spurs at Chicago Bulls
+401810075,2025-11-13 01:00:00+00:00,2025-26,Regular Season,True,False,GS,Golden State Warriors,120.0,125.0,L,Frost Bank Center,San Antonio,TX,,,Golden State Warriors at San Antonio Spurs
+401809789,2025-11-15 02:30:00+00:00,2025-26,Regular Season,True,False,GS,Golden State Warriors,108.0,109.0,L,Frost Bank Center,San Antonio,TX,,,Golden State Warriors at San Antonio Spurs
+401810089,2025-11-16 21:00:00+00:00,2025-26,Regular Season,True,False,SAC,Sacramento Kings,123.0,110.0,W,Frost Bank Center,San Antonio,TX,,,Sacramento Kings at San Antonio Spurs
+401810107,2025-11-19 01:00:00+00:00,2025-26,Regular Season,True,False,MEM,Memphis Grizzlies,111.0,101.0,W,Frost Bank Center,San Antonio,TX,,,Memphis Grizzlies at San Antonio Spurs
+401810122,2025-11-21 01:00:00+00:00,2025-26,Regular Season,True,False,ATL,Atlanta Hawks,135.0,126.0,W,Frost Bank Center,San Antonio,TX,,,Atlanta Hawks at San Antonio Spurs
+401810136,2025-11-24 01:00:00+00:00,2025-26,Regular Season,False,False,PHX,Phoenix Suns,102.0,111.0,L,Mortgage Matchup Center,Phoenix,AZ,,,San Antonio Spurs at Phoenix Suns
+401809809,2025-11-27 03:00:00+00:00,2025-26,Regular Season,False,False,POR,Portland Trail Blazers,115.0,102.0,W,Moda Center,Portland,OR,,,San Antonio Spurs at Portland Trail Blazers
+401809818,2025-11-29 02:30:00+00:00,2025-26,Regular Season,False,False,DEN,Denver Nuggets,139.0,136.0,W,Ball Arena,Denver,CO,,,San Antonio Spurs at Denver Nuggets
+401810161,2025-12-01 00:00:00+00:00,2025-26,Regular Season,False,False,MIN,Minnesota Timberwolves,112.0,125.0,L,Target Center,Minneapolis,MN,,,San Antonio Spurs at Minnesota Timberwolves
+401810177,2025-12-03 01:00:00+00:00,2025-26,Regular Season,True,False,MEM,Memphis Grizzlies,126.0,119.0,W,Frost Bank Center,San Antonio,TX,,,Memphis Grizzlies at San Antonio Spurs
+401810181,2025-12-04 00:00:00+00:00,2025-26,Regular Season,False,False,ORL,Orlando Magic,114.0,112.0,W,Kia Center,Orlando,FL,,,San Antonio Spurs at Orlando Magic
+401810196,2025-12-06 00:30:00+00:00,2025-26,Regular Season,False,False,CLE,Cleveland Cavaliers,117.0,130.0,L,Rocket Arena,Cleveland,OH,,,San Antonio Spurs at Cleveland Cavaliers
+401810221,2025-12-09 01:00:00+00:00,2025-26,Regular Season,False,False,NO,New Orleans Pelicans,135.0,132.0,W,Smoothie King Center,New Orleans,LA,,,San Antonio Spurs at New Orleans Pelicans
+401809836,2025-12-11 03:00:00+00:00,2025-26,Regular Season,False,False,LAL,Los Angeles Lakers,132.0,119.0,W,crypto.com Arena,Los Angeles,CA,,,San Antonio Spurs at Los Angeles Lakers
+401809838,2025-12-14 02:00:00+00:00,2025-26,Regular Season,False,True,OKC,Oklahoma City Thunder,111.0,109.0,W,T-Mobile Arena,Las Vegas,NV,,,San Antonio Spurs at Oklahoma City Thunder
+401809839,2025-12-17 01:30:00+00:00,2025-26,Regular Season,False,True,NY,New York Knicks,113.0,124.0,L,T-Mobile Arena,Las Vegas,NV,,,San Antonio Spurs at New York Knicks
+401810225,2025-12-19 01:00:00+00:00,2025-26,Regular Season,True,False,WSH,Washington Wizards,119.0,94.0,W,Frost Bank Center,San Antonio,TX,,,Washington Wizards at San Antonio Spurs
+401810238,2025-12-20 00:30:00+00:00,2025-26,Regular Season,False,False,ATL,Atlanta Hawks,126.0,98.0,W,State Farm Arena,Atlanta,GA,,,San Antonio Spurs at Atlanta Hawks
+401810254,2025-12-22 00:00:00+00:00,2025-26,Regular Season,False,False,WSH,Washington Wizards,124.0,113.0,W,Capital One Arena,Washington,DC,,,San Antonio Spurs at Washington Wizards
+401810272,2025-12-24 01:30:00+00:00,2025-26,Regular Season,True,False,OKC,Oklahoma City Thunder,130.0,110.0,W,Frost Bank Center,San Antonio,TX,,,Oklahoma City Thunder at San Antonio Spurs
+401809239,2025-12-25 19:30:00+00:00,2025-26,Regular Season,False,False,OKC,Oklahoma City Thunder,117.0,102.0,W,Paycom Center,Oklahoma City,OK,,,San Antonio Spurs at Oklahoma City Thunder
+401810295,2025-12-28 01:00:00+00:00,2025-26,Regular Season,True,False,UTAH,Utah Jazz,114.0,127.0,L,Frost Bank Center,San Antonio,TX,,,Utah Jazz at San Antonio Spurs
+401810311,2025-12-30 01:00:00+00:00,2025-26,Regular Season,True,False,CLE,Cleveland Cavaliers,101.0,113.0,L,Frost Bank Center,San Antonio,TX,,,Cleveland Cavaliers at San Antonio Spurs
+401810322,2026-01-01 00:00:00+00:00,2025-26,Regular Season,True,False,NY,New York Knicks,134.0,132.0,W,Frost Bank Center,San Antonio,TX,,,New York Knicks at San Antonio Spurs
+401810331,2026-01-03 00:00:00+00:00,2025-26,Regular Season,False,False,IND,Indiana Pacers,123.0,113.0,W,Gainbridge Fieldhouse,Indianapolis,IN,,,San Antonio Spurs at Indiana Pacers
+401810345,2026-01-04 01:00:00+00:00,2025-26,Regular Season,True,False,POR,Portland Trail Blazers,110.0,115.0,L,Frost Bank Center,San Antonio,TX,,,Portland Trail Blazers at San Antonio Spurs
+401810367,2026-01-07 01:00:00+00:00,2025-26,Regular Season,False,False,MEM,Memphis Grizzlies,105.0,106.0,L,FedExForum,Memphis,TN,,,San Antonio Spurs at Memphis Grizzlies
+401810378,2026-01-08 02:30:00+00:00,2025-26,Regular Season,True,False,LAL,Los Angeles Lakers,107.0,91.0,W,Frost Bank Center,San Antonio,TX,,,Los Angeles Lakers at San Antonio Spurs
+401810400,2026-01-11 01:00:00+00:00,2025-26,Regular Season,False,False,BOS,Boston Celtics,100.0,95.0,W,TD Garden,Boston,MA,,,San Antonio Spurs at Boston Celtics
+401810407,2026-01-12 00:00:00+00:00,2025-26,Regular Season,False,False,MIN,Minnesota Timberwolves,103.0,104.0,L,Target Center,Minneapolis,MN,,,San Antonio Spurs at Minnesota Timberwolves
+401810423,2026-01-14 01:00:00+00:00,2025-26,Regular Season,False,False,OKC,Oklahoma City Thunder,98.0,119.0,L,Paycom Center,Oklahoma City,OK,,,San Antonio Spurs at Oklahoma City Thunder
+401810437,2026-01-16 01:00:00+00:00,2025-26,Regular Season,True,False,MIL,Milwaukee Bucks,119.0,101.0,W,Frost Bank Center,San Antonio,TX,,,Milwaukee Bucks at San Antonio Spurs
+401810453,2026-01-18 01:00:00+00:00,2025-26,Regular Season,True,False,MIN,Minnesota Timberwolves,126.0,123.0,W,Frost Bank Center,San Antonio,TX,,,Minnesota Timberwolves at San Antonio Spurs
+401810466,2026-01-19 22:00:00+00:00,2025-26,Regular Season,True,False,UTAH,Utah Jazz,123.0,110.0,W,Frost Bank Center,San Antonio,TX,,,Utah Jazz at San Antonio Spurs
+401810470,2026-01-21 01:00:00+00:00,2025-26,Regular Season,False,False,HOU,Houston Rockets,106.0,111.0,L,Toyota Center (Houston),Houston,TX,,,San Antonio Spurs at Houston Rockets
+401810487,2026-01-23 02:00:00+00:00,2025-26,Regular Season,False,False,UTAH,Utah Jazz,126.0,109.0,W,Delta Center,Salt Lake City,UT,,,San Antonio Spurs at Utah Jazz
+401810509,2026-01-26 00:00:00+00:00,2025-26,Regular Season,True,False,NO,New Orleans Pelicans,95.0,104.0,L,Frost Bank Center,San Antonio,TX,,,New Orleans Pelicans at San Antonio Spurs
+401810534,2026-01-29 02:42:00+00:00,2025-26,Regular Season,False,False,HOU,Houston Rockets,111.0,99.0,W,Toyota Center (Houston),Houston,TX,,,San Antonio Spurs at Houston Rockets
+401810552,2026-01-31 17:00:00+00:00,2025-26,Regular Season,False,False,CHA,Charlotte Hornets,106.0,111.0,L,Spectrum Center,Charlotte,NC,,,San Antonio Spurs at Charlotte Hornets
+401810558,2026-02-02 02:00:00+00:00,2025-26,Regular Season,True,False,ORL,Orlando Magic,112.0,103.0,W,Frost Bank Center,San Antonio,TX,,,Orlando Magic at San Antonio Spurs
+401810585,2026-02-05 02:30:00+00:00,2025-26,Regular Season,True,False,OKC,Oklahoma City Thunder,116.0,106.0,W,Frost Bank Center,San Antonio,TX,,,Oklahoma City Thunder at San Antonio Spurs
+401810593,2026-02-06 01:30:00+00:00,2025-26,Regular Season,False,False,DAL,Dallas Mavericks,135.0,123.0,W,American Airlines Center,Dallas,TX,,,San Antonio Spurs at Dallas Mavericks
+401810604,2026-02-07 23:00:00+00:00,2025-26,Regular Season,True,False,DAL,Dallas Mavericks,138.0,125.0,W,Frost Bank Center,San Antonio,TX,,,Dallas Mavericks at San Antonio Spurs
+401810629,2026-02-11 03:30:00+00:00,2025-26,Regular Season,False,False,LAL,Los Angeles Lakers,136.0,108.0,W,crypto.com Arena,Los Angeles,CA,,,San Antonio Spurs at Los Angeles Lakers
+401810643,2026-02-12 03:00:00+00:00,2025-26,Regular Season,False,False,GS,Golden State Warriors,126.0,113.0,W,Chase Center,San Francisco,CA,,,San Antonio Spurs at Golden State Warriors
+401810653,2026-02-20 01:30:00+00:00,2025-26,Regular Season,True,False,PHX,Phoenix Suns,121.0,94.0,W,Moody Center,Austin,TX,,,Phoenix Suns at San Antonio Spurs
+401810670,2026-02-22 01:00:00+00:00,2025-26,Regular Season,True,False,SAC,Sacramento Kings,139.0,122.0,W,Moody Center,Austin,TX,,,Sacramento Kings at San Antonio Spurs
+401810683,2026-02-24 00:00:00+00:00,2025-26,Regular Season,False,False,DET,Detroit Pistons,114.0,103.0,W,Little Caesars Arena,Detroit,MI,,,San Antonio Spurs at Detroit Pistons
+401810698,2026-02-26 00:30:00+00:00,2025-26,Regular Season,False,False,TOR,Toronto Raptors,110.0,107.0,W,Scotiabank Arena,Toronto,ON,,,San Antonio Spurs at Toronto Raptors
+401810706,2026-02-27 00:30:00+00:00,2025-26,Regular Season,False,False,BKN,Brooklyn Nets,126.0,110.0,W,Barclays Center,Brooklyn,NY,,,San Antonio Spurs at Brooklyn Nets
+401810723,2026-03-01 18:00:00+00:00,2025-26,Regular Season,False,False,NY,New York Knicks,89.0,114.0,L,Madison Square Garden,New York,NY,,,San Antonio Spurs at New York Knicks
+401810743,2026-03-04 01:00:00+00:00,2025-26,Regular Season,False,False,PHI,Philadelphia 76ers,131.0,91.0,W,Xfinity Mobile Arena,Philadelphia,PA,,,San Antonio Spurs at Philadelphia 76ers
+401810759,2026-03-06 01:00:00+00:00,2025-26,Regular Season,True,False,DET,Detroit Pistons,121.0,106.0,W,Frost Bank Center,San Antonio,TX,,,Detroit Pistons at San Antonio Spurs
+401810768,2026-03-07 02:30:00+00:00,2025-26,Regular Season,True,False,LAC,LA Clippers,116.0,112.0,W,Frost Bank Center,San Antonio,TX,,,LA Clippers at San Antonio Spurs
+401810782,2026-03-09 00:00:00+00:00,2025-26,Regular Season,True,False,HOU,Houston Rockets,145.0,120.0,W,Frost Bank Center,San Antonio,TX,,,Houston Rockets at San Antonio Spurs
+401810797,2026-03-11 00:00:00+00:00,2025-26,Regular Season,True,False,BOS,Boston Celtics,125.0,116.0,W,Frost Bank Center,San Antonio,TX,,,Boston Celtics at San Antonio Spurs
+401810813,2026-03-13 01:00:00+00:00,2025-26,Regular Season,True,False,DEN,Denver Nuggets,131.0,136.0,L,Frost Bank Center,San Antonio,TX,,,Denver Nuggets at San Antonio Spurs
+401810828,2026-03-14 19:30:00+00:00,2025-26,Regular Season,True,False,CHA,Charlotte Hornets,115.0,102.0,W,Frost Bank Center,San Antonio,TX,,,Charlotte Hornets at San Antonio Spurs
+401810845,2026-03-17 02:00:00+00:00,2025-26,Regular Season,False,False,LAC,LA Clippers,119.0,115.0,W,Intuit Dome,Inglewood,CA,,,San Antonio Spurs at LA Clippers
+401810853,2026-03-18 02:00:00+00:00,2025-26,Regular Season,False,False,SAC,Sacramento Kings,132.0,104.0,W,Golden 1 Center,Sacramento,CA,,,San Antonio Spurs at Sacramento Kings
+401810868,2026-03-20 00:00:00+00:00,2025-26,Regular Season,True,False,PHX,Phoenix Suns,101.0,100.0,W,Frost Bank Center,San Antonio,TX,,,Phoenix Suns at San Antonio Spurs
+401810883,2026-03-22 00:00:00+00:00,2025-26,Regular Season,True,False,IND,Indiana Pacers,134.0,119.0,W,Frost Bank Center,San Antonio,TX,,,Indiana Pacers at San Antonio Spurs
+401810896,2026-03-23 23:00:00+00:00,2025-26,Regular Season,False,False,MIA,Miami Heat,136.0,111.0,W,Kaseya Center,Miami,FL,,,San Antonio Spurs at Miami Heat
+401810911,2026-03-26 00:00:00+00:00,2025-26,Regular Season,False,False,MEM,Memphis Grizzlies,123.0,98.0,W,FedExForum,Memphis,TN,,,San Antonio Spurs at Memphis Grizzlies
+401810931,2026-03-28 19:00:00+00:00,2025-26,Regular Season,False,False,MIL,Milwaukee Bucks,127.0,95.0,W,Fiserv Forum,Milwaukee,WI,,,San Antonio Spurs at Milwaukee Bucks
+401810949,2026-03-31 00:00:00+00:00,2025-26,Regular Season,True,False,CHI,Chicago Bulls,129.0,114.0,W,Frost Bank Center,San Antonio,TX,,,Chicago Bulls at San Antonio Spurs
+401810968,2026-04-02 02:00:00+00:00,2025-26,Regular Season,False,False,GS,Golden State Warriors,127.0,113.0,W,Chase Center,San Francisco,CA,,,San Antonio Spurs at Golden State Warriors
+401810974,2026-04-03 02:30:00+00:00,2025-26,Regular Season,False,False,LAC,LA Clippers,118.0,99.0,W,Intuit Dome,Inglewood,CA,,,San Antonio Spurs at LA Clippers
+401810985,2026-04-04 19:00:00+00:00,2025-26,Regular Season,False,False,DEN,Denver Nuggets,134.0,136.0,L,Ball Arena,Denver,CO,,,San Antonio Spurs at Denver Nuggets
+401811001,2026-04-07 00:00:00+00:00,2025-26,Regular Season,True,False,PHI,Philadelphia 76ers,115.0,102.0,W,Frost Bank Center,San Antonio,TX,,,Philadelphia 76ers at San Antonio Spurs
+401811016,2026-04-09 01:30:00+00:00,2025-26,Regular Season,True,False,POR,Portland Trail Blazers,112.0,101.0,W,Frost Bank Center,San Antonio,TX,,,Portland Trail Blazers at San Antonio Spurs
+401811035,2026-04-11 00:00:00+00:00,2025-26,Regular Season,True,False,DAL,Dallas Mavericks,139.0,120.0,W,Frost Bank Center,San Antonio,TX,,,Dallas Mavericks at San Antonio Spurs
+401811052,2026-04-13 00:30:00+00:00,2025-26,Regular Season,True,False,DEN,Denver Nuggets,118.0,128.0,L,Frost Bank Center,San Antonio,TX,,,Denver Nuggets at San Antonio Spurs
+401869194,2026-04-20 01:00:00+00:00,2025-26,Postseason,True,False,POR,Portland Trail Blazers,111.0,98.0,W,Frost Bank Center,San Antonio,TX,,,Portland Trail Blazers at San Antonio Spurs
+401869378,2026-04-22 00:00:00+00:00,2025-26,Postseason,True,False,POR,Portland Trail Blazers,103.0,106.0,L,Frost Bank Center,San Antonio,TX,,,Portland Trail Blazers at San Antonio Spurs
+401869382,2026-04-25 02:30:00+00:00,2025-26,Postseason,False,False,POR,Portland Trail Blazers,120.0,108.0,W,Moda Center,Portland,OR,,,San Antonio Spurs at Portland Trail Blazers
+401869385,2026-04-26 19:30:00+00:00,2025-26,Postseason,False,False,POR,Portland Trail Blazers,114.0,93.0,W,Moda Center,Portland,OR,,,San Antonio Spurs at Portland Trail Blazers
+401869386,2026-04-29 01:30:00+00:00,2025-26,Postseason,True,False,POR,Portland Trail Blazers,114.0,95.0,W,Frost Bank Center,San Antonio,TX,,,Portland Trail Blazers at San Antonio Spurs
+401871152,2026-05-05 01:30:00+00:00,2025-26,Postseason,True,False,MIN,Minnesota Timberwolves,102.0,104.0,L,Frost Bank Center,San Antonio,TX,,,Minnesota Timberwolves at San Antonio Spurs
+401871153,2026-05-07 01:30:00+00:00,2025-26,Postseason,True,False,MIN,Minnesota Timberwolves,133.0,95.0,W,Frost Bank Center,San Antonio,TX,,,Minnesota Timberwolves at San Antonio Spurs
+401871154,2026-05-09 01:30:00+00:00,2025-26,Postseason,False,False,MIN,Minnesota Timberwolves,115.0,108.0,W,Target Center,Minneapolis,MN,,,San Antonio Spurs at Minnesota Timberwolves
+401871155,2026-05-10 23:30:00+00:00,2025-26,Postseason,False,False,MIN,Minnesota Timberwolves,109.0,114.0,L,Target Center,Minneapolis,MN,,,San Antonio Spurs at Minnesota Timberwolves
+401871156,2026-05-13 00:00:00+00:00,2025-26,Postseason,True,False,MIN,Minnesota Timberwolves,126.0,97.0,W,Frost Bank Center,San Antonio,TX,,,Minnesota Timberwolves at San Antonio Spurs
+401871157,2026-05-16 01:30:00+00:00,2025-26,Postseason,False,False,MIN,Minnesota Timberwolves,139.0,109.0,W,Target Center,Minneapolis,MN,,,San Antonio Spurs at Minnesota Timberwolves
+401873197,2026-05-19 00:30:00+00:00,2025-26,Postseason,False,False,OKC,Oklahoma City Thunder,122.0,115.0,W,Paycom Center,Oklahoma City,OK,,,San Antonio Spurs at Oklahoma City Thunder
+401873198,2026-05-21 00:30:00+00:00,2025-26,Postseason,False,False,OKC,Oklahoma City Thunder,113.0,122.0,L,Paycom Center,Oklahoma City,OK,,,San Antonio Spurs at Oklahoma City Thunder
+401873199,2026-05-23 00:30:00+00:00,2025-26,Postseason,True,False,OKC,Oklahoma City Thunder,108.0,123.0,L,Frost Bank Center,San Antonio,TX,,,Oklahoma City Thunder at San Antonio Spurs
+401873200,2026-05-25 00:00:00+00:00,2025-26,Postseason,True,False,OKC,Oklahoma City Thunder,103.0,82.0,W,Frost Bank Center,San Antonio,TX,,,Oklahoma City Thunder at San Antonio Spurs
+401873201,2026-05-27 00:30:00+00:00,2025-26,Postseason,False,False,OKC,Oklahoma City Thunder,114.0,127.0,L,Paycom Center,Oklahoma City,OK,,,San Antonio Spurs at Oklahoma City Thunder
+401873202,2026-05-29 00:30:00+00:00,2025-26,Postseason,True,False,OKC,Oklahoma City Thunder,118.0,91.0,W,Frost Bank Center,San Antonio,TX,,,Oklahoma City Thunder at San Antonio Spurs
+401873203,2026-05-31 00:00:00+00:00,2025-26,Postseason,False,False,OKC,Oklahoma City Thunder,111.0,103.0,W,Paycom Center,Oklahoma City,OK,,,San Antonio Spurs at Oklahoma City Thunder
+401859963,2026-06-04 00:30:00+00:00,2025-26,Postseason,True,False,NY,New York Knicks,95.0,105.0,L,Frost Bank Center,San Antonio,TX,,,New York Knicks at San Antonio Spurs
+401859964,2026-06-06 00:30:00+00:00,2025-26,Postseason,True,False,NY,New York Knicks,104.0,105.0,L,Frost Bank Center,San Antonio,TX,,,New York Knicks at San Antonio Spurs
+401859965,2026-06-09 00:30:00+00:00,2025-26,Postseason,False,False,NY,New York Knicks,115.0,111.0,W,Madison Square Garden,New York,NY,,,San Antonio Spurs at New York Knicks
+401859966,2026-06-11 00:30:00+00:00,2025-26,Postseason,False,False,NY,New York Knicks,106.0,107.0,L,Madison Square Garden,New York,NY,,,San Antonio Spurs at New York Knicks
+401859967,2026-06-14 00:30:00+00:00,2025-26,Postseason,True,False,NY,New York Knicks,90.0,94.0,L,Frost Bank Center,San Antonio,TX,,,New York Knicks at San Antonio Spurs

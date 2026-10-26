@@ -1,0 +1,7 @@
+source(file.path("R", "bootstrap.R"))
+plays <- read_snapshot("spurs_postseason_plays_2026", root)
+schedule <- read_snapshot("spurs_schedule_2025_26", root)
+ids <- schedule |> dplyr::filter(.data$season_type == "Postseason", .data$opponent == "NY") |> dplyr::pull(.data$game_id)
+result <- finals_clutch_profile(plays, ids)
+readr::write_csv(result$detail, file.path(root, "projects", "05_finals_clutch_autopsy", "finals_play_by_play_enriched_r.csv"))
+readr::write_csv(result$summary, file.path(root, "projects", "05_finals_clutch_autopsy", "finals_lead_summary_r.csv"))

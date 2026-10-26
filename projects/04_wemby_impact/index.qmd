@@ -1,0 +1,21 @@
+---
+title: "04 · Wemby Impact"
+description: "The reigning DPOY's game-level availability split."
+---
+
+## Decision question
+
+How different did San Antonio's results look when Victor Wembanyama played, and which descriptive gaps matter most for roster resilience?
+
+{{< include ../../reports/04_wemby_impact.md >}}
+
+## Deliverables
+
+- [Python analysis](analysis.py) · [R analysis](analysis.R)
+- [Game-level splits](wemby_game_splits.csv) · [Summary](wemby_impact_summary.csv)
+- Win percentage, average margin, team points, opponent points, and individual boxscore context.
+
+## Next extension
+
+Fit opponent-adjusted hierarchical models with teammate availability, days of rest, and projected role minutes; move to possession-level rim frequency and finishing once tracking data is licensed.
+
