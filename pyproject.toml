@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spurslab"
+version = "0.1.0"
+description = "A Python and R NBA analytics portfolio centered on the 2026-27 San Antonio Spurs."
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [{name = "Joseph Smarrelli"}]
+dependencies = [
+  "altair>=5.5",
+  "duckdb>=1.1",
+  "jinja2>=3.1",
+  "matplotlib>=3.9",
+  "numpy>=2.0",
+  "pandas>=2.2",
+  "plotly>=5.24",
+  "pyarrow>=18",
+  "pydantic>=2.10",
+  "pyyaml>=6.0",
+  "requests>=2.32",
+  "scikit-learn>=1.5",
+  "scipy>=1.14",
+  "seaborn>=0.13",
+  "statsmodels>=0.14",
+  "typer>=0.15",
+]
+
+[project.optional-dependencies]
+dev = [
+  "mypy>=1.14",
+  "pytest>=8.3",
+  "pytest-cov>=6.0",
+  "ruff>=0.9",
+]
+notebooks = ["jupyter>=1.1", "nbformat>=5.10", "papermill>=2.6"]
+
+[project.scripts]
+spurslab = "spurslab.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q --cov=spurslab --cov-report=term-missing"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = [".cache", "spurslabR.Rcheck"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true

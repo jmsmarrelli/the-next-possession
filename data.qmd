@@ -1,0 +1,36 @@
+---
+title: "Data & provenance"
+description: "Sources, snapshots, contracts, and responsible-use notes."
+---
+
+## Sources
+
+- **Official NBA / Spurs:** season context, official schedule release, awards, and playoff results.
+- **ESPN public JSON:** Spurs schedules, roster, game boxscores, play-by-play, and win probability.
+- **Basketball Reference:** 2025–26 team ratings, schedules/results, and 2022–23 through 2025–26 player season tables.
+
+See [SOURCES.md](SOURCES.md) for direct links and access notes.
+
+## Snapshot catalog
+
+| Snapshot | Grain | Used by |
+|---|---|---|
+| `spurs_schedule_2026_27` | One row per assigned game | Schedule, title odds |
+| `spurs_roster_2026_27` | One row per rostered player | Roster context |
+| `spurs_schedule_2025_26` | One row per regular/postseason game | Rotation, Wemby, Finals |
+| `spurs_player_boxscores_2025_26` | Player-game | Rotation, Wemby |
+| `spurs_postseason_plays_2026` | Play | Finals |
+| `nba_team_ratings_2025_26` | Team-season | Contenders, title odds |
+| `nba_player_seasons_2022_26` | Player-team-season | Archetypes |
+| `nba_games_2025_26` | Game | Validation and extensions |
+
+Every snapshot is stored as portable CSV and efficient Parquet. `manifest.json` records row counts, schemas, and build time.
+
+## Data contracts
+
+Normalizers fail loudly when schedules or rosters are empty; feature functions assert required columns; tests cover invariants such as nonnegative travel, bounded probabilities, unique game IDs, and exactly five players in retained starter units.
+
+## Responsible use
+
+This is an educational portfolio, not an official NBA product. Provider data remains subject to each provider's terms. The repository caches raw responses locally but distributes analysis-ready extracts and source links. Refresh slowly and avoid parallel request bursts.
+

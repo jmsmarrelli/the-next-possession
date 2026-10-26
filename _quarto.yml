@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - methodology.qmd
+    - data.qmd
+    - projects/*/index.qmd
+
+website:
+  title: "The Next Possession"
+  description: "Seven NBA data projects for the 2026–27 San Antonio Spurs"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Projects
+        menu:
+          - href: projects/01_schedule_gauntlet/index.qmd
+            text: Schedule Gauntlet
+          - href: projects/02_contender_landscape/index.qmd
+            text: Contender Landscape
+          - href: projects/03_rotation_chemistry/index.qmd
+            text: Rotation Chemistry
+          - href: projects/04_wemby_impact/index.qmd
+            text: Wemby Impact
+          - href: projects/05_finals_clutch_autopsy/index.qmd
+            text: Finals Clutch Autopsy
+          - href: projects/06_player_archetypes/index.qmd
+            text: Player Archetypes
+          - href: projects/07_title_odds/index.qmd
+            text: Title Odds
+      - href: methodology.qmd
+        text: Methods
+      - href: data.qmd
+        text: Data
+  page-footer:
+    left: "Built with Python, R, Quarto, and public basketball data."
+    right: "Educational portfolio · Not affiliated with the NBA or San Antonio Spurs."
+
+format:
+  html:
+    theme: cosmo
+    css: assets/styles.css
+    toc: true
+    smooth-scroll: true
+    code-fold: true
+    code-tools: true
+    link-external-newwindow: true
+

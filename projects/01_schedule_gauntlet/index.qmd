@@ -1,0 +1,21 @@
+---
+title: "01 · Schedule Gauntlet"
+description: "Where travel, rest, and game density squeeze the 2026–27 Spurs."
+---
+
+## Decision question
+
+Which assigned games and stretches deserve proactive rotation planning, and where does the Europe trip alter the normal rest/travel pattern?
+
+{{< include ../../reports/01_schedule_gauntlet.md >}}
+
+## Deliverables
+
+- [Python analysis](analysis.py) · [R analysis](analysis.R)
+- [Per-game stress table](schedule_stress.csv)
+- Features: rest days, back-to-back, games in four/seven days, travel miles, time-zone crossings, international indicator, stress tier.
+
+## Next extension
+
+Add expected player workload and arena-to-hotel travel timing once operational data is available; validate whether the stress index predicts residual performance after opponent strength and home court.
+

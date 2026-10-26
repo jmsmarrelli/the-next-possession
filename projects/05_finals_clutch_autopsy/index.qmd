@@ -1,0 +1,21 @@
+---
+title: "05 · Finals Clutch Autopsy"
+description: "How a five-game series contained five late-game fights."
+---
+
+## Decision question
+
+When did San Antonio's Finals leads erode, how often did games reach the NBA clutch definition, and which possessions should be tagged for tactical review?
+
+{{< include ../../reports/05_finals_clutch_autopsy.md >}}
+
+## Deliverables
+
+- [Python analysis](analysis.py) · [R analysis](analysis.R)
+- [Enriched Finals play-by-play](finals_play_by_play_enriched.csv) · [Game summary](finals_lead_summary.csv)
+- Spurs-perspective margin, win probability, clutch-state flags, peak lead, final margin, and peak-to-final swing.
+
+## Next extension
+
+Create a human-in-the-loop possession taxonomy for coverage, primary action, advantage creation, decision quality, and timeout/lineup context; test inter-rater agreement before modeling.
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>06 · Player Archetypes</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+<nav class="fallback-nav">
+<a class="brand" href="../../index.html">THE NEXT POSSESSION</a>
+<a href="../../index.html#explore-the-portfolio">Projects</a>
+<a href="../../methodology.html">Methods</a>
+<a href="../../data.html">Data</a>
+</nav>
+<h1 id="player-archetypes">06 · Player Archetypes</h1>
+<h2 id="decision-question">Decision question</h2>
+<p>Which statistical roles exist among real rotation players, where do
+the Spurs fall, and which league neighbors provide plausible
+complementary-player comparisons?</p>
+<h2 id="what-the-model-says">What the model says</h2>
+<p>An eight-cluster model places every qualifying rotation player into a
+role using scoring, playmaking, rebounding, shooting volume/efficiency,
+usage, defensive events, and box impact. San Antonio’s leading
+qualifying profiles are <strong>Victor Wembanyama (Interior finishers),
+Luke Kornet (Rim protectors), De’Aaron Fox (Movement shooters), Stephon
+Castle (Movement shooters), Julian Champagnie (Low-usage
+defenders)</strong>.</p>
+<p>The useful output is not the label itself; it is the leaguewide
+neighborhood around each Spur. That makes role overlap, succession
+planning, and complementary-player searches reproducible without
+pretending that positions capture how players actually produce
+value.</p>
+<figure>
+<img src="../../assets/06_player_archetypes.png"
+alt="Player archetypes" />
+<figcaption aria-hidden="true">Player archetypes</figcaption>
+</figure>
+<h2 id="deliverables">Deliverables</h2>
+<ul>
+<li><a href="analysis.py">Python analysis</a> · <a href="analysis.R">R
+analysis</a></li>
+<li><a href="player_archetypes.csv">Leaguewide archetypes</a> · <a
+href="spurs_archetypes.csv">Spurs subset</a></li>
+<li>Eight k-means clusters over standardized volume, efficiency,
+playmaking, rebounding, defensive event, usage, and box-impact
+features.</li>
+</ul>
+<h2 id="next-extension">Next extension</h2>
+<p>Replace box-only defensive features with matchup and tracking data;
+test cluster stability across seasons and alternative algorithms before
+using the taxonomy in acquisition decisions.</p>
+<footer class="fallback-footer">Built with Python, R, Quarto source, and public basketball data. Educational portfolio; not affiliated with the NBA or San Antonio Spurs.</footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+game_id,max_spurs_lead,final_margin,lead_surrendered,peak_spurs_win_probability,clutch_plays,clutch_scoring_plays
+401859963,14,-10,24,0.941,43,9
+401859964,12,-1,13,0.836,63,13
+401859965,12,4,8,1.0,18,6
+401859966,29,-1,30,0.996,50,8
+401859967,16,-3,19,0.971,93,14

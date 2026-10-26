@@ -1,0 +1,21 @@
+---
+title: "06 · Player Archetypes"
+description: "A leaguewide role map for fit, overlap, and succession planning."
+---
+
+## Decision question
+
+Which statistical roles exist among real rotation players, where do the Spurs fall, and which league neighbors provide plausible complementary-player comparisons?
+
+{{< include ../../reports/06_player_archetypes.md >}}
+
+## Deliverables
+
+- [Python analysis](analysis.py) · [R analysis](analysis.R)
+- [Leaguewide archetypes](player_archetypes.csv) · [Spurs subset](spurs_archetypes.csv)
+- Eight k-means clusters over standardized volume, efficiency, playmaking, rebounding, defensive event, usage, and box-impact features.
+
+## Next extension
+
+Replace box-only defensive features with matchup and tracking data; test cluster stability across seasons and alternative algorithms before using the taxonomy in acquisition decisions.
+

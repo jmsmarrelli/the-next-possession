@@ -1,0 +1,36 @@
+---
+title: "Methods & model cards"
+description: "What each model does, what it does not do, and how to extend it."
+---
+
+## Design principles
+
+1. **Decision first.** Every project starts with a Spurs question, not an algorithm looking for a home.
+2. **Claims match the data.** Boxscore co-appearance is called a proxy; availability splits are descriptive; simulations are baselines.
+3. **One source of truth.** Python and R read the same snapshots and share configuration values.
+4. **Rebuildable artifacts.** Each chart is generated from an exported analysis table, with fixed random seed 210.
+5. **Graceful upstream failure.** Raw responses are cached and processed CSV/Parquet snapshots support offline review.
+
+## Project model cards
+
+| Project | Method | Primary output | Main limitation |
+|---|---|---|---|
+| Schedule Gauntlet | Great-circle travel + rolling schedule-density index | Per-game stress score | Does not observe charter timing or recovery data |
+| Contender Landscape | Adjusted offensive/defensive ratings | Two-way contender map | Prior-year snapshot, not current-season form |
+| Rotation Co-appearance | Pair co-appearance aggregation + starter-unit summaries | Heuristic co-appearance score | Not possession-level shared minutes |
+| Wemby Impact | Played/out descriptive game split | Win rate and margin split | Confounding from opponent and teammate availability |
+| Finals Clutch Autopsy | Play-by-play score state + win probability | Lead trajectories and clutch states | Play descriptions do not encode tactical intent |
+| Player Archetypes | Standardized features + k-means | Eight leaguewide role clusters | Labels are descriptive, not player value rankings |
+| Tournament Scenario | Normal-margin game model + Monte Carlo | Win distribution and title baseline | Excludes injuries and explicit roster-change priors |
+
+## Simulation specification
+
+The per-game model starts from 72% of the prior season's adjusted net rating, adds 2.2 points for home court, and applies small documented rest, travel, and schedule-stress adjustments. Expected margins are converted to win probabilities under a 12-point standard deviation. The schedule simulation uses 25,000 draws; the contender knockout baseline uses 50,000.
+
+The schedule currently has 80 assigned dates because two NBA Cup flex games are not yet determined. Projected wins therefore apply only to assigned games and are labeled that way everywhere.
+
+## R/Python parity
+
+The paired implementations prioritize identical inputs, feature definitions, and exported schemas. `scripts/verify_r_parity.py` executes the full R build, verifies identifier coverage, and compares core numeric columns within explicit tolerances. The two title models intentionally differ slightly: Python simulates best-of-seven series explicitly, while R includes a dependency-light Bradley–Terry approximation as a sensitivity baseline.
+
+[Read the completed validation report](VALIDATION.md).

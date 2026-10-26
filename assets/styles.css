@@ -1,0 +1,125 @@
+:root {
+  --spurs-black: #0d1117;
+  --spurs-silver: #c4ced4;
+  --cream: #f5f1e8;
+  --charcoal: #263238;
+  --teal: #00b2a9;
+  --orange: #f36f45;
+}
+
+body {
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.fallback-nav {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1rem max(1.25rem, calc((100% - 1150px) / 2));
+  margin: -1rem -1rem 1rem;
+  background: var(--spurs-black);
+}
+
+.fallback-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.fallback-nav .brand {
+  margin-right: auto;
+  color: var(--teal);
+  letter-spacing: .04em;
+}
+
+.fallback-footer {
+  margin-top: 4rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid #d8d2c4;
+  color: #5e625f;
+  font-size: .85rem;
+}
+
+.navbar {
+  background: var(--spurs-black) !important;
+}
+
+.hero {
+  padding: 4.5rem 3rem;
+  margin: -1rem -1rem 2rem;
+  color: white;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(0, 178, 169, .35), transparent 25%),
+    radial-gradient(circle at 20% 80%, rgba(243, 111, 69, .28), transparent 30%),
+    linear-gradient(135deg, #0d1117, #263238);
+  border-radius: 0 0 2rem 2rem;
+}
+
+.hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 8vw, 6.4rem);
+  line-height: .9;
+  letter-spacing: -.05em;
+  margin-bottom: 1.25rem;
+}
+
+.eyebrow {
+  color: var(--teal);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.project-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  padding: 1.5rem;
+  border: 1px solid #d8d2c4;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .55);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.project-card:hover {
+  color: inherit;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(13, 17, 23, .10);
+}
+
+.project-number {
+  color: var(--orange);
+  font-size: .85rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.callout-note {
+  border-left-color: var(--teal) !important;
+}
+
+table {
+  background: rgba(255, 255, 255, .55);
+}
+
+main, body > header, body > nav#TOC {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
